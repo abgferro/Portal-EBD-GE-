@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>EBD ADGE · Escola Bíblica de Discípulos</title>
+<meta name="description" content="Escola Bíblica de Discípulos — Assembleia de Deus Geração Eleita. Lições bíblicas, estudo e aplicação da Palavra de Deus. 2º Trimestre 2026.">
+<meta name="theme-color" content="#07122a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="EBD ADGE">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="EBD, Escola Bíblica, Assembleia de Deus, Geração Eleita, lições bíblicas, Abraão, Isaque, Jacó, discipulado">
+<link rel="canonical" href="https://ebd.adge.com.br/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="EBD ADGE · Escola Bíblica de Discípulos">
+<meta property="og:description" content="Lições bíblicas — Homens dos quais o Mundo não Era Digno. O Legado de Abraão, Isaque e Jacó. 2º Trimestre 2026.">
+<meta property="og:image" content="capa-revista-2t2026.jpg">
+<meta property="og:url" content="https://ebd.adge.com.br/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="EBD ADGE">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EBD ADGE · Escola Bíblica de Discípulos">
+<meta name="twitter:description" content="Lições bíblicas — 2º Trimestre 2026">
+<meta name="twitter:image" content="capa-revista-2t2026.jpg">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "EBD ADGE — Escola Bíblica de Discípulos",
+  "description": "Escola Bíblica da Assembleia de Deus Geração Eleita",
+  "url": "https://ebd.adge.com.br/",
+  "logo": "logo-adge.jpg"
+}
+</script>
+
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="logo-adge.jpg">
+
+<!-- Font preload -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+
+/* ═══════════════════════════════════════
+   DESIGN SYSTEM — VARIÁVEIS GLOBAIS
+═══════════════════════════════════════ */
+:root{
+  /* Paleta principal */
+  --gold:#d4a84a;
+  --gold-light:#ecc46a;
+  --gold-dark:#a07828;
+  --gold-glow:rgba(212,168,74,0.18);
+
+  /* Escuros */
+  --navy:#07122a;
+  --navy-mid:#0d1f3c;
+  --navy-light:#1a3464;
+  --navy-deep:#030810;
+
+  /* Texto */
+  --text:#ffffff;
+  --text-mid:#d0dff5;
+  --text-light:#a0bcdc;
+
+  /* Fundo */
+  --bg:#07122a;
+  --bg-card:#0d1f3c;
+  --bg-card-alt:#0a1828;
+
+  /* Bordas */
+  --border:#1a3060;
+  --border-gold:rgba(212,168,74,0.25);
+
+  /* Utilitários */
+  --green:#4caf7d;
+  --green-dim:rgba(76,175,125,0.15);
+  --wa-green:#25d366;
+  --shadow:rgba(0,0,0,0.45);
+  --shadow-gold:rgba(212,168,74,0.2);
+
+  /* Tipografia */
+  --font-body:'Source Sans 3',sans-serif;
+  --font-display:'Cinzel',serif;
+  --font-serif:'Cormorant Garamond',serif;
+
+  /* Espaçamento */
+  --gap-xs:6px;
+  --gap-sm:10px;
+  --gap-md:16px;
+  --gap-lg:24px;
+  --gap-xl:40px;
+
+  /* Raio */
+  --r-sm:8px;
+  --r-md:12px;
+  --r-lg:16px;
+  --r-xl:20px;
+
+  /* Transições */
+  --t-fast:.15s ease;
+  --t-base:.22s ease;
+  --t-slow:.4s ease;
+}
+
+/* ── MODO CLARO ── */
+body.light{
+  --text:#0a1628;
+  --text-mid:#1a3050;
+  --text-light:#3a5870;
+  --bg:#f0ece2;
+  --bg-card:#ffffff;
+  --bg-card-alt:#f5f2eb;
+  --border:#d0c8b0;
+  --border-gold:rgba(160,120,40,0.3);
+  --shadow:rgba(10,22,40,0.10);
+  --shadow-gold:rgba(160,120,40,0.15);
+}
+
+body{
+  font-family:var(--font-body);
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  transition:background var(--t-slow),color var(--t-slow);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* ═══════════════════════════════════════
+   SKIP LINK (ACESSIBILIDADE)
+═══════════════════════════════════════ */
+.skip-link{
+  position:absolute;
+  top:-100%;
+  left:var(--gap-md);
+  background:var(--gold);
+  color:var(--navy);
+  padding:8px 16px;
+  border-radius:var(--r-sm);
+  font-family:var(--font-display);
+  font-size:12px;
+  letter-spacing:1px;
+  font-weight:700;
+  z-index:9999;
+  text-decoration:none;
+  transition:top var(--t-fast);
+}
+.skip-link:focus{top:var(--gap-sm)}
+
+/* ═══════════════════════════════════════
+   BOTÃO TEMA
+═══════════════════════════════════════ */
+#btnTheme{
+  position:fixed;
+  top:14px;
+  right:14px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:#07122a;
+  border:1px solid var(--border-gold);
+  color:var(--gold);
+  font-size:16px;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+  box-shadow:0 2px 12px var(--shadow);
+  transition:background var(--t-base),transform var(--t-fast);
+}
+#btnTheme:hover{background:rgba(212,168,74,0.15);transform:scale(1.08)}
+#btnTheme:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ═══════════════════════════════════════
+   VERSÍCULO BANNER
+═══════════════════════════════════════ */
+.verse-banner{
+  background:linear-gradient(90deg,#020810,#07122a,#020810);
+  border-bottom:1px solid rgba(212,168,74,0.12);
+  padding:10px 52px 10px 16px;
+  text-align:center;
+}
+.vb-inner{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:var(--gap-sm);
+  flex-wrap:wrap;
+}
+.vb-label{
+  font-family:var(--font-display);
+  font-size:8px;
+  letter-spacing:3px;
+  color:rgba(212,168,74,0.5);
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.vb-text{
+  font-family:var(--font-serif);
+  font-size:14px;
+  font-style:italic;
+  color:rgba(255,255,255,0.62);
+  line-height:1.45;
+  transition:opacity var(--t-slow);
+}
+.vb-ref{
+  font-family:var(--font-display);
+  font-size:9px;
+  color:rgba(212,168,74,0.5);
+  letter-spacing:1px;
+  white-space:nowrap;
+}
+
+/* ═══════════════════════════════════════
+   HERO — sempre escuro
+═══════════════════════════════════════ */
+.hero{
+  background:linear-gradient(160deg,#020810 0%,#07122a 55%,#0c1e3c 100%);
+  padding:52px 24px 44px;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  border-bottom:1px solid rgba(212,168,74,0.1);
+}
+.hero::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse at 50% -10%,rgba(212,168,74,0.1) 0%,transparent 58%);
+  pointer-events:none;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(212,168,74,0.3),transparent);
+}
+
+.hero-logo{
+  width:116px;
+  height:116px;
+  border-radius:50%;
+  border:2px solid rgba(212,168,74,0.4);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 20px;
+  overflow:hidden;
+  background:#07122a;
+  box-shadow:0 0 44px rgba(212,168,74,0.2),0 8px 32px rgba(0,0,0,0.6);
+  position:relative;
+  animation:fadeDown .6s ease both;
+}
+.hero-logo img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.hero-logo-ph{
+  font-family:var(--font-display);
+  font-size:22px;
+  font-weight:700;
+  color:var(--gold);
+  letter-spacing:2px;
+  z-index:1;
+}
+
+.hero-church{
+  font-family:var(--font-display);
+  font-size:clamp(9px,2vw,12px);
+  letter-spacing:4px;
+  color:rgba(255,255,255,0.38);
+  text-transform:uppercase;
+  margin-bottom:8px;
+  animation:fadeUp .55s .1s ease both;
+}
+.hero-title{
+  font-family:var(--font-display);
+  font-size:clamp(22px,5.5vw,40px);
+  font-weight:700;
+  color:#fff;
+  line-height:1.1;
+  margin-bottom:5px;
+  animation:fadeUp .55s .18s ease both;
+}
+.hero-title em{
+  display:block;
+  font-family:var(--font-serif);
+  font-style:italic;
+  font-weight:300;
+  font-size:0.57em;
+  color:var(--gold);
+  letter-spacing:3px;
+  margin-top:6px;
+}
+.hero-verse{
+  font-family:var(--font-serif);
+  font-size:clamp(13px,2vw,16px);
+  font-style:italic;
+  color:rgba(255,255,255,0.3);
+  max-width:500px;
+  margin:14px auto 22px;
+  line-height:1.7;
+  animation:fadeUp .55s .26s ease both;
+}
+.hero-pills{
+  display:flex;
+  gap:var(--gap-xs);
+  justify-content:center;
+  flex-wrap:wrap;
+  animation:fadeUp .55s .34s ease both;
+}
+.pill{
+  border-radius:var(--r-md);
+  padding:5px 14px;
+  font-size:11px;
+  font-family:var(--font-display);
+  letter-spacing:1px;
+}
+.pill-ghost{
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(212,168,74,0.18);
+  color:rgba(255,255,255,0.45);
+}
+.pill-gold{
+  background:rgba(212,168,74,0.1);
+  border:1px solid rgba(212,168,74,0.5);
+  color:var(--gold);
+}
+.pill-green{
+  background:rgba(76,175,125,0.1);
+  border:1px solid rgba(76,175,125,0.45);
+  color:var(--green);
+}
+
+/* ═══════════════════════════════════════
+   PRÓXIMA AULA BAR — sempre escuro
+═══════════════════════════════════════ */
+.next-bar{
+  background:#0a1828;
+  border-bottom:1px solid rgba(212,168,74,0.12);
+  padding:0 var(--gap-md);
+}
+.next-inner{
+  max-width:1060px;
+  margin:0 auto;
+  padding:14px 0;
+  display:flex;
+  align-items:center;
+  gap:var(--gap-md);
+  flex-wrap:wrap;
+}
+.next-badge{
+  background:linear-gradient(135deg,#07122a,#1a3464);
+  border:1px solid var(--border-gold);
+  border-radius:var(--r-sm);
+  padding:8px 14px;
+  flex-shrink:0;
+}
+.next-badge-lbl{
+  font-family:var(--font-display);
+  font-size:7px;
+  letter-spacing:2px;
+  color:rgba(212,168,74,0.55);
+  text-transform:uppercase;
+  margin-bottom:2px;
+}
+.next-badge-val{
+  font-family:var(--font-display);
+  font-size:13px;
+  color:#fff;
+  font-weight:600;
+}
+.next-info{flex:1;min-width:140px}
+.next-title{font-size:14px;font-weight:600;color:#fff;margin-bottom:2px}
+.next-sub{font-size:12px;color:rgba(255,255,255,0.4)}
+.next-cd{display:flex;gap:5px;align-items:center;flex-shrink:0}
+.cd-block{
+  text-align:center;
+  background:rgba(255,255,255,0.05);
+  border:1px solid var(--border-gold);
+  border-radius:var(--r-sm);
+  padding:5px 7px;
+  min-width:38px;
+}
+.cd-num{
+  font-family:var(--font-display);
+  font-size:15px;
+  font-weight:700;
+  color:var(--gold);
+  line-height:1;
+}
+.cd-unit{
+  font-family:var(--font-display);
+  font-size:7px;
+  letter-spacing:1px;
+  color:rgba(255,255,255,0.32);
+  text-transform:uppercase;
+  margin-top:2px;
+}
+.cd-sep{font-family:var(--font-display);font-size:14px;color:rgba(212,168,74,0.3)}
+
+/* ═══════════════════════════════════════
+   BUSCA
+═══════════════════════════════════════ */
+.search-bar{
+  background:#0a1828;
+  border-bottom:1px solid rgba(212,168,74,0.08);
+  padding:10px var(--gap-md);
+}
+.search-wrap{max-width:1060px;margin:0 auto;position:relative}
+.search-input{
+  width:100%;
+  background:rgba(255,255,255,0.05);
+  border:1px solid var(--border-gold);
+  border-radius:var(--r-sm);
+  padding:10px 16px 10px 40px;
+  font-size:14px;
+  color:#fff;
+  font-family:var(--font-body);
+  transition:border-color var(--t-base),background var(--t-base);
+}
+.search-input:focus{
+  outline:none;
+  border-color:rgba(212,168,74,0.5);
+  background:rgba(255,255,255,0.07);
+}
+.search-input::placeholder{color:rgba(255,255,255,0.28)}
+.search-ico{
+  position:absolute;
+  left:13px;
+  top:50%;
+  transform:translateY(-50%);
+  color:rgba(255,255,255,0.3);
+  font-size:14px;
+  pointer-events:none;
+  aria-hidden:true;
+}
+.search-drop{
+  display:none;
+  position:absolute;
+  top:calc(100% + 6px);
+  left:0;
+  right:0;
+  background:#0d1f3c;
+  border:1px solid var(--border-gold);
+  border-radius:var(--r-sm);
+  z-index:300;
+  box-shadow:0 8px 36px rgba(0,0,0,0.55);
+  max-height:280px;
+  overflow-y:auto;
+}
+.search-drop.open{display:block}
+.sr-item{
+  padding:12px 16px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  cursor:pointer;
+  transition:background var(--t-fast);
+  text-decoration:none;
+  display:block;
+  color:inherit;
+}
+.sr-item:last-child{border-bottom:none}
+.sr-item:hover,.sr-item:focus{background:rgba(212,168,74,0.07);outline:none}
+.sr-num{font-family:var(--font-display);font-size:9px;letter-spacing:2px;color:var(--gold);margin-bottom:2px}
+.sr-title{font-size:13px;color:#d0dff5;line-height:1.4}
+.sr-ref{font-size:11px;color:rgba(255,255,255,0.32);font-style:italic;margin-top:2px}
+.sr-empty{padding:18px;text-align:center;font-size:13px;color:rgba(255,255,255,0.32);font-style:italic}
+
+/* ═══════════════════════════════════════
+   MAIN LAYOUT
+═══════════════════════════════════════ */
+main{
+  max-width:1060px;
+  margin:0 auto;
+  padding:36px var(--gap-md) 80px;
+}
+
+/* ═══════════════════════════════════════
+   SEPARADOR
+═══════════════════════════════════════ */
+.sep{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin:44px 0 22px;
+  animation:fadeUp .5s ease both;
+}
+.sep::before,.sep::after{
+  content:'';
+  flex:1;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--border),transparent);
+}
+.sep-text{
+  font-family:var(--font-display);
+  font-size:10px;
+  letter-spacing:4px;
+  color:var(--gold);
+  white-space:nowrap;
+  text-transform:uppercase;
+}
+
+/* ═══════════════════════════════════════
+   BOTÃO COMPARTILHAR
+═══════════════════════════════════════ */
+.share-btn{
+  background:none;
+  border:1px solid var(--border-gold);
+  color:var(--gold);
+  border-radius:var(--r-sm);
+  padding:7px 12px;
+  font-family:var(--font-display);
+  font-size:9px;
+  letter-spacing:1px;
+  cursor:pointer;
+  transition:background var(--t-base),transform var(--t-fast);
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+.share-btn:hover{background:rgba(212,168,74,0.1);transform:translateY(-1px)}
+.share-btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ═══════════════════════════════════════
+   INFO CARDS
+═══════════════════════════════════════ */
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap:var(--gap-md);
+}
+.info-card{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--r-md);
+  padding:18px;
+  text-align:center;
+  transition:transform var(--t-base),border-color var(--t-base),box-shadow var(--t-base);
+}
+.info-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(212,168,74,0.4);
+  box-shadow:0 8px 24px var(--shadow-gold);
+}
+body.light .info-card{box-shadow:0 2px 14px var(--shadow)}
+.info-icon{font-size:26px;margin-bottom:10px}
+.info-label{
+  font-family:var(--font-display);
+  font-size:8px;
+  letter-spacing:3px;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:5px;
+}
+.info-value{
+  font-family:var(--font-serif);
+  font-size:16px;
+  font-weight:600;
+  line-height:1.3;
+  color:var(--text-mid);
+}
+.info-sub{font-size:11px;color:var(--text-light);margin-top:3px}
+
+/* ═══════════════════════════════════════
+   CAPA REVISTA
+═══════════════════════════════════════ */
+.magazine-cover-wrap{
+  display:flex;
+  gap:var(--gap-lg);
+  align-items:flex-start;
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  padding:20px;
+  margin-bottom:14px;
+  flex-wrap:wrap;
+  transition:box-shadow var(--t-base);
+}
+body.light .magazine-cover-wrap{box-shadow:0 2px 14px var(--shadow)}
+.mag-cover-frame{
+  width:130px;
+  flex-shrink:0;
+  border-radius:var(--r-sm);
+  overflow:hidden;
+  box-shadow:0 8px 28px rgba(0,0,0,0.5);
+  border:1px solid rgba(212,168,74,0.2);
+}
+.mag-cover-frame img{width:100%;display:block;loading:lazy}
+.mag-cover-info{
+  flex:1;
+  min-width:180px;
+  display:flex;
+  flex-direction:column;
+  gap:var(--gap-sm);
+}
+.mag-tag{font-family:var(--font-display);font-size:9px;letter-spacing:3px;color:var(--gold);text-transform:uppercase}
+.mag-title{font-family:var(--font-display);font-size:clamp(16px,3.5vw,22px);font-weight:700;color:var(--text-mid);line-height:1.2}
+.mag-sub{font-family:var(--font-serif);font-size:14px;font-style:italic;color:var(--text-light);line-height:1.45}
+.mag-meta{display:flex;gap:6px;flex-wrap:wrap}
+.mag-meta-pill{
+  background:rgba(212,168,74,0.07);
+  border:1px solid rgba(212,168,74,0.2);
+  border-radius:var(--r-sm);
+  padding:3px 10px;
+  font-family:var(--font-display);
+  font-size:9px;
+  letter-spacing:1px;
+  color:var(--gold);
+}
+.mag-verse{
+  font-family:var(--font-serif);
+  font-size:13px;
+  font-style:italic;
+  color:var(--text-light);
+  line-height:1.6;
+  border-left:3px solid rgba(212,168,74,0.3);
+  padding-left:10px;
+}
+.mag-verse-ref{
+  display:block;
+  font-family:var(--font-display);
+  font-size:9px;
+  letter-spacing:1px;
+  color:rgba(212,168,74,0.55);
+  margin-top:4px;
+  font-style:normal;
+}
+.mag-lessons-count{
+  font-family:var(--font-display);
+  font-size:10px;
+  letter-spacing:2px;
+  color:var(--green);
+  text-transform:uppercase;
+}
+
+/* ═══════════════════════════════════════
+   LINHA DO TEMPO
+═══════════════════════════════════════ */
+.tl-wrap{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  padding:20px var(--gap-md);
+  margin-bottom:6px;
+}
+body.light .tl-wrap{box-shadow:0 2px 14px var(--shadow)}
+.tl-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:16px;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.tl-title{font-family:var(--font-display);font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase}
+.tl-prog-txt{font-size:12px;color:var(--text-light)}
+
+/* Horizontal (desktop) */
+.tl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tl-scroll::-webkit-scrollbar{height:3px}
+.tl-scroll::-webkit-scrollbar-thumb{background:rgba(212,168,74,0.3);border-radius:2px}
+.tl-horiz{display:flex;gap:0;min-width:600px;padding:32px 8px 8px;position:relative}
+.tl-line-bg{position:absolute;top:46px;left:8px;right:8px;height:2px;background:var(--border)}
+.tl-line-fill{position:absolute;top:46px;left:8px;height:2px;background:linear-gradient(90deg,var(--gold-dark),var(--gold));transition:width 1.4s ease;width:0%}
+.tl-step{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;position:relative;z-index:2}
+.tl-current-tag{
+  position:absolute;
+  top:-22px;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--green);
+  color:#fff;
+  font-family:var(--font-display);
+  font-size:7px;
+  letter-spacing:1px;
+  padding:2px 7px;
+  border-radius:5px;
+  white-space:nowrap;
+  animation:blink 2s ease infinite;
+}
+.tl-dot{
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  border:2px solid var(--border);
+  background:var(--bg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:9px;
+  font-family:var(--font-display);
+  color:var(--text-light);
+  font-weight:700;
+  flex-shrink:0;
+  transition:all var(--t-base);
+}
+.tl-step.done .tl-dot{background:var(--gold);border-color:var(--gold);color:#07122a;font-size:11px}
+.tl-step.current .tl-dot{background:var(--gold-dark);border-color:var(--gold-light);color:#fff;box-shadow:0 0 0 5px rgba(212,168,74,0.2);animation:ring 2s ease infinite}
+.tl-step.locked .tl-dot{opacity:.45}
+.tl-label{font-family:var(--font-display);font-size:7px;letter-spacing:.5px;color:var(--text-light);text-align:center;text-transform:uppercase;line-height:1.3;max-width:48px;word-break:break-word}
+.tl-step.done .tl-label{color:var(--gold)}
+.tl-step.current .tl-label{color:var(--gold-light);font-weight:700}
+.tl-week{font-size:7px;color:var(--text-light);text-align:center}
+.tl-step.current .tl-week{color:var(--green)}
+
+/* Vertical (mobile) */
+.tl-vert{display:none;flex-direction:column;gap:0}
+.tl-vert-item{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}
+.tl-vert-item:last-child{border-bottom:none}
+.tl-vert-dot{width:28px;height:28px;border-radius:50%;border:2px solid var(--border);background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:10px;font-family:var(--font-display);color:var(--text-light);font-weight:700;flex-shrink:0;transition:all var(--t-base)}
+.tl-vert-item.done .tl-vert-dot{background:var(--gold);border-color:var(--gold);color:#07122a}
+.tl-vert-item.current .tl-vert-dot{background:var(--gold-dark);border-color:var(--gold-light);color:#fff;box-shadow:0 0 0 4px rgba(212,168,74,0.2)}
+.tl-vert-item.locked .tl-vert-dot{opacity:.4}
+.tl-vert-info{flex:1}
+.tl-vert-label{font-family:var(--font-display);font-size:10px;letter-spacing:1px;color:var(--text-mid);text-transform:uppercase;margin-bottom:1px;line-height:1.35}
+.tl-vert-item.done .tl-vert-label{color:var(--gold)}
+.tl-vert-item.current .tl-vert-label{color:var(--gold-light)}
+.tl-vert-item.locked .tl-vert-label{color:var(--text-light)}
+.tl-vert-week{font-size:11px;color:var(--text-light)}
+.tl-vert-item.current .tl-vert-week{color:var(--green)}
+.tl-vert-badge{background:var(--green);color:#fff;font-family:var(--font-display);font-size:8px;letter-spacing:1px;padding:2px 8px;border-radius:5px;white-space:nowrap;animation:blink 2s ease infinite}
+
+@media(max-width:560px){
+  .tl-scroll{display:none}
+  .tl-vert{display:flex}
+}
+
+/* ═══════════════════════════════════════
+   TRIMESTRE CARD
+═══════════════════════════════════════ */
+.trim-card{
+  border-radius:var(--r-lg);
+  overflow:hidden;
+  border:1px solid rgba(212,168,74,0.18);
+  box-shadow:0 6px 32px rgba(0,0,0,0.3);
+  margin-bottom:14px;
+}
+.trim-banner{
+  background:linear-gradient(135deg,#030a18 0%,#07122a 60%,#0d1e38 100%);
+  padding:24px 20px;
+  position:relative;
+  overflow:hidden;
+  display:block;
+  text-decoration:none;
+  transition:opacity var(--t-base);
+}
+.trim-banner:hover{opacity:.9}
+.trim-banner:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.trim-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 50%,rgba(212,168,74,0.06) 0%,transparent 55%)}
+.trim-tag{font-family:var(--font-display);font-size:9px;letter-spacing:3px;color:rgba(212,168,74,0.48);text-transform:uppercase;margin-bottom:10px}
+.trim-title{font-family:var(--font-display);font-size:clamp(17px,4vw,24px);font-weight:700;color:#fff;margin-bottom:4px}
+.trim-sub{font-family:var(--font-serif);font-size:clamp(13px,2vw,16px);font-style:italic;color:rgba(255,255,255,0.36);margin-bottom:14px}
+.trim-pills{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}
+.trim-pill{background:rgba(255,255,255,0.05);border:1px solid rgba(212,168,74,0.15);border-radius:var(--r-sm);padding:3px 11px;font-size:11px;font-family:var(--font-display);letter-spacing:1px;color:rgba(255,255,255,0.4)}
+.trim-pill.gold{border-color:rgba(212,168,74,0.45);color:var(--gold)}
+.trim-pill.green{border-color:rgba(76,175,125,0.4);color:var(--green)}
+.trim-prog-row{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.trim-prog-track{flex:1;height:4px;background:rgba(255,255,255,0.08);border-radius:2px;overflow:hidden}
+.trim-prog-fill{height:100%;background:linear-gradient(90deg,var(--gold-dark),var(--gold));border-radius:2px;width:0%;transition:width 1.2s ease}
+.trim-prog-lbl{font-family:var(--font-display);font-size:10px;color:var(--gold);white-space:nowrap}
+.trim-cta{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(212,168,74,0.38);color:var(--gold);padding:8px 18px;border-radius:var(--r-sm);font-family:var(--font-display);font-size:10px;letter-spacing:2px;background:transparent;transition:background var(--t-base);text-decoration:none}
+.trim-cta:hover{background:rgba(212,168,74,0.1)}
+
+/* Grade de lições */
+.lessons-grid{
+  background:var(--bg-card);
+  border-top:1px solid var(--border);
+  padding:var(--gap-md);
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(138px,1fr));
+  gap:8px;
+}
+.lc{
+  border:1px solid var(--border);
+  border-radius:var(--r-sm);
+  padding:11px 12px;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  text-decoration:none;
+  position:relative;
+  overflow:hidden;
+  transition:all var(--t-base);
+  background:var(--bg);
+  color:inherit;
+}
+.lc.active{border-color:rgba(212,168,74,0.45);background:linear-gradient(135deg,rgba(212,168,74,0.08) 0%,rgba(212,168,74,0.02) 100%)}
+.lc.active:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:0 6px 18px rgba(212,168,74,0.14)}
+.lc.active:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.lc.soon{opacity:.4;pointer-events:none;cursor:default}
+.lc.thisweek{border-color:rgba(76,175,125,0.5);background:rgba(76,175,125,0.07);pointer-events:auto;opacity:1;cursor:pointer}
+.lc.thisweek::before{content:'📍 Esta semana';position:absolute;top:5px;right:5px;background:var(--green);color:#fff;font-family:var(--font-display);font-size:7px;letter-spacing:1px;padding:2px 6px;border-radius:5px;animation:blink 2s ease infinite;white-space:nowrap}
+.chip-num{font-family:var(--font-display);font-size:9px;letter-spacing:2px;color:var(--gold)}
+.lc.soon .chip-num,.lc.thisweek .chip-num{color:var(--text-light)}
+.chip-title{font-size:12px;font-weight:600;line-height:1.3;color:var(--text-mid)}
+.lc.soon .chip-title{color:var(--text-light)}
+.chip-ref{font-size:10px;color:var(--text-light);font-style:italic}
+.chip-done{position:absolute;top:7px;right:8px;font-size:11px;color:var(--green)}
+.chip-lock{position:absolute;top:7px;right:8px;font-size:10px;color:var(--text-light)}
+
+/* ═══════════════════════════════════════
+   TRIMESTRE ANTERIOR
+═══════════════════════════════════════ */
+.prev-card{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  overflow:hidden;
+  margin-bottom:10px;
+}
+body.light .prev-card{box-shadow:0 2px 12px var(--shadow)}
+.prev-banner{
+  background:linear-gradient(135deg,#060e1e,#0a1828);
+  padding:18px 20px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  text-decoration:none;
+  transition:opacity var(--t-base);
+}
+.prev-banner:hover{opacity:.82}
+.prev-badge{background:rgba(255,255,255,0.04);border:1px solid rgba(212,168,74,0.12);border-radius:var(--r-sm);padding:8px 12px;text-align:center;flex-shrink:0}
+.prev-badge-trim{font-family:var(--font-display);font-size:9px;letter-spacing:2px;color:rgba(212,168,74,0.45)}
+.prev-badge-year{font-family:var(--font-display);font-size:15px;color:rgba(255,255,255,0.4);font-weight:600}
+.prev-info{flex:1}
+.prev-title{font-family:var(--font-display);font-size:13px;color:rgba(255,255,255,0.6);margin-bottom:3px}
+.prev-sub{font-size:12px;color:rgba(255,255,255,0.28);font-style:italic;font-family:var(--font-serif)}
+.prev-stats{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}
+.prev-stat{font-family:var(--font-display);font-size:9px;letter-spacing:1px;color:rgba(212,168,74,0.5);background:rgba(212,168,74,0.06);border:1px solid rgba(212,168,74,0.15);border-radius:6px;padding:2px 8px}
+.prev-arrow{color:rgba(212,168,74,0.3);font-size:18px;flex-shrink:0}
+
+/* ═══════════════════════════════════════
+   PRÓXIMOS TRIMESTRES
+═══════════════════════════════════════ */
+.future-card{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px 20px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:10px;
+  opacity:.45;
+}
+.future-icon{font-size:24px;flex-shrink:0}
+.future-tag{font-family:var(--font-display);font-size:9px;letter-spacing:3px;color:var(--text-light);text-transform:uppercase;margin-bottom:4px}
+.future-title{font-family:var(--font-serif);font-size:16px;font-weight:600;color:var(--text-light)}
+.future-badge{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--r-sm);padding:4px 14px;font-family:var(--font-display);font-size:9px;letter-spacing:2px;color:var(--text-light)}
+
+/* ═══════════════════════════════════════
+   EQUIPE
+═══════════════════════════════════════ */
+.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px}
+.team-card{
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:22px 16px;
+  text-align:center;
+  transition:transform var(--t-base),box-shadow var(--t-base),border-color var(--t-base);
+}
+body.light .team-card{box-shadow:0 2px 12px var(--shadow)}
+.team-card:hover{transform:translateY(-3px);border-color:rgba(212,168,74,0.38);box-shadow:0 8px 24px var(--shadow-gold)}
+.team-card.highlight{border-color:rgba(212,168,74,0.38)}
+.team-avatar{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#07122a,#1a3464);
+  border:2px solid rgba(212,168,74,0.3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 12px;
+  font-family:var(--font-display);
+  font-size:18px;
+  font-weight:700;
+  color:var(--gold);
+  overflow:hidden;
+}
+.team-card.highlight .team-avatar{width:72px;height:72px;border-color:rgba(212,168,74,0.55);font-size:22px}
+.team-role{font-family:var(--font-display);font-size:8px;letter-spacing:3px;text-transform:uppercase;margin-bottom:6px}
+.team-role.super{color:var(--gold-light)}
+.team-role.sec{color:#5a9fd4}
+.team-role.prof{color:var(--green)}
+.team-role.dev{color:#b070d0}
+.team-name{font-family:var(--font-serif);font-size:17px;font-weight:600;margin-bottom:4px;color:var(--text-mid)}
+.team-detail{font-size:12px;color:var(--text-light);line-height:1.5}
+
+/* ═══════════════════════════════════════
+   WHATSAPP
+═══════════════════════════════════════ */
+.wa-wrap{
+  background:var(--bg-card);
+  border:1px solid rgba(37,211,102,0.22);
+  border-radius:14px;
+  padding:var(--gap-md) 20px;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+.wa-icon{font-size:28px;flex-shrink:0;aria-hidden:true}
+.wa-title{font-family:var(--font-display);font-size:10px;letter-spacing:2px;color:var(--wa-green);text-transform:uppercase;margin-bottom:4px}
+.wa-desc{font-size:13px;color:var(--text-light);line-height:1.45}
+.wa-btn{
+  background:var(--wa-green);
+  border:none;
+  color:#fff;
+  padding:9px 18px;
+  border-radius:var(--r-sm);
+  font-family:var(--font-display);
+  font-size:10px;
+  letter-spacing:2px;
+  cursor:pointer;
+  transition:background var(--t-base),transform var(--t-fast);
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  white-space:nowrap;
+}
+.wa-btn:hover{background:#1da851;transform:translateY(-1px)}
+.wa-btn:focus-visible{outline:2px solid var(--wa-green);outline-offset:3px}
+
+/* ═══════════════════════════════════════
+   RODAPÉ — sempre escuro
+═══════════════════════════════════════ */
+footer{
+  background:linear-gradient(180deg,#07122a,#030810);
+  border-top:1px solid rgba(212,168,74,0.12);
+  padding:28px 20px;
+  text-align:center;
+  margin-top:20px;
+}
+.footer-logo{font-family:var(--font-display);font-size:10px;letter-spacing:5px;color:rgba(212,168,74,0.5);margin-bottom:8px}
+.footer-dev{font-size:12px;color:rgba(255,255,255,0.35)}
+
+/* ═══════════════════════════════════════
+   ANIMAÇÕES
+═══════════════════════════════════════ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.5}}
+@keyframes ring{0%,100%{box-shadow:0 0 0 5px rgba(212,168,74,0.2)}50%{box-shadow:0 0 0 9px rgba(212,168,74,0.07)}}
+
+.trim-card{animation:fadeUp .5s ease both}
+.tl-wrap{animation:fadeUp .5s .06s ease both}
+.magazine-cover-wrap{animation:fadeUp .5s .03s ease both}
+.prev-card{animation:fadeUp .5s ease both}
+.wa-wrap{animation:fadeUp .5s ease both}
+.info-card{animation:fadeUp .5s ease both}
+.info-card:nth-child(1){animation-delay:.04s}
+.info-card:nth-child(2){animation-delay:.08s}
+.info-card:nth-child(3){animation-delay:.12s}
+.info-card:nth-child(4){animation-delay:.16s}
+.team-card{animation:fadeUp .5s ease both}
+.team-card:nth-child(1){animation-delay:.04s}
+.team-card:nth-child(2){animation-delay:.08s}
+.team-card:nth-child(3){animation-delay:.12s}
+.team-card:nth-child(4){animation-delay:.16s}
+.team-card:nth-child(5){animation-delay:.20s}
+.team-card:nth-child(6){animation-delay:.24s}
+
+/* ═══════════════════════════════════════
+   RESPONSIVO
+═══════════════════════════════════════ */
+@media(max-width:600px){
+  .hero{padding:48px 14px 38px}
+  main{padding:28px 12px 70px}
+  .next-inner{gap:10px}
+  .next-cd{gap:4px}
+  .cd-block{min-width:34px;padding:4px 6px}
+  .cd-num{font-size:13px}
+  .lessons-grid{grid-template-columns:repeat(auto-fill,minmax(125px,1fr));padding:12px;gap:7px}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+  .info-grid{grid-template-columns:repeat(2,1fr)}
+  .future-card{flex-direction:column;text-align:center;gap:8px}
+  .wa-wrap{flex-direction:column;text-align:center}
+  .magazine-cover-wrap{flex-direction:column;align-items:center;text-align:center}
+  .mag-cover-info{align-items:center}
+  .mag-meta{justify-content:center}
+  .mag-verse{text-align:left}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+
+<!-- ACESSIBILIDADE: Skip link -->
+<a class="skip-link" href="#conteudo-principal">Ir para o conteúdo principal</a>
+
+<!-- TEMA -->
+<button id="btnTheme" onclick="toggleTheme()" aria-label="Alternar entre modo escuro e claro" title="Alternar tema">☀️</button>
+
+<!-- VERSÍCULO DA SEMANA -->
+<div class="verse-banner" role="banner" aria-label="Versículo da semana">
+  <div class="vb-inner">
+    <span class="vb-label" aria-hidden="true">✦ Versículo da Semana</span>
+    <span class="vb-text" id="weekVerse" aria-live="polite">…</span>
+    <span class="vb-ref" id="weekRef"></span>
+  </div>
+</div>
+
+<!-- HERO -->
+<header class="hero" role="banner">
+  <div class="hero-logo" aria-hidden="true">
+    <img id="logoImg" src="logo-adge.jpg" alt="Logo ADGE — Assembleia de Deus Geração Eleita"
+         loading="eager"
+         onerror="this.style.display='none';document.getElementById('logoPh').style.display='flex'">
+    <span class="hero-logo-ph" id="logoPh" style="display:none" aria-hidden="true">AD</span>
+  </div>
+  <p class="hero-church">Assembleia de Deus Geração Eleita</p>
+  <h1 class="hero-title">Escola Bíblica de Discípulos<em>Conhecer a Palavra · Viver a Fé</em></h1>
+  <p class="hero-verse">"Esforça-te por te apresentares a Deus aprovado, como obreiro que não tem de que se envergonhar, que maneja bem a palavra da verdade."<br><span style="font-size:.85em;opacity:.55">— 2 Timóteo 2.15</span></p>
+  <div class="hero-pills" role="list" aria-label="Informações do trimestre">
+    <span class="pill pill-gold" role="listitem">13 Lições por Trimestre</span>
+    <span class="pill pill-ghost" role="listitem">Domingos na EBD</span>
+    <span class="pill pill-green" role="listitem">2º Trim. 2026 Ativo</span>
+  </div>
+</header>
+
+<!-- PRÓXIMA AULA -->
+<nav class="next-bar" aria-label="Próxima aula">
+  <div class="next-inner">
+    <div class="next-badge" aria-label="Próxima aula">
+      <div class="next-badge-lbl">Próxima Aula</div>
+      <div class="next-badge-val">Lição 08</div>
+    </div>
+    <div class="next-info">
+      <div class="next-title">Isaque: Herdeiro da Promessa</div>
+      <div class="next-sub">Próximo domingo · Gênesis 24</div>
+    </div>
+    <div class="next-cd" aria-label="Contagem regressiva" role="timer">
+      <div class="cd-block"><div class="cd-num" id="cdD">--</div><div class="cd-unit">Dias</div></div>
+      <span class="cd-sep" aria-hidden="true">:</span>
+      <div class="cd-block"><div class="cd-num" id="cdH">--</div><div class="cd-unit">Hrs</div></div>
+      <span class="cd-sep" aria-hidden="true">:</span>
+      <div class="cd-block"><div class="cd-num" id="cdM">--</div><div class="cd-unit">Min</div></div>
+      <span class="cd-sep" aria-hidden="true">:</span>
+      <div class="cd-block"><div class="cd-num" id="cdS">--</div><div class="cd-unit">Seg</div></div>
+    </div>
+    <a class="share-btn" id="waShareBtn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar lição no WhatsApp">📤 Compartilhar</a>
+  </div>
+</nav>
+
+<!-- BUSCA -->
+<div class="search-bar">
+  <div class="search-wrap">
+    <span class="search-ico" aria-hidden="true">🔍</span>
+    <label for="searchInput" class="sr-only" style="position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Buscar lição</label>
+    <input
+      class="search-input"
+      id="searchInput"
+      type="search"
+      placeholder="Buscar lição, tema ou versículo… (ex: aliança, Ismael, fé)"
+      oninput="doSearch(this.value)"
+      onfocus="doSearch(this.value)"
+      autocomplete="off"
+      aria-label="Buscar lições"
+      aria-controls="searchDrop"
+      aria-autocomplete="list"
+    >
+    <div class="search-drop" id="searchDrop" role="listbox" aria-label="Resultados da busca"></div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main id="conteudo-principal">
+
+  <!-- SOBRE A EBD -->
+  <div class="sep" aria-hidden="true"><span class="sep-text">✦ A Nossa EBD</span></div>
+  <section aria-labelledby="sec-ebd">
+    <h2 id="sec-ebd" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden">Sobre a EBD</h2>
+    <div class="info-grid">
+      <div class="info-card" tabindex="0">
+        <div class="info-icon" aria-hidden="true">📅</div>
+        <div class="info-label">Quando</div>
+        <div class="info-value">Todo Domingo</div>
+        <div class="info-sub">Antes do culto da manhã</div>
+      </div>
+      <div class="info-card" tabindex="0">
+        <div class="info-icon" aria-hidden="true">📖</div>
+        <div class="info-label">Formato</div>
+        <div class="info-value">Lição Semanal</div>
+        <div class="info-sub">Leitura diária + aula no domingo</div>
+      </div>
+      <div class="info-card" tabindex="0">
+        <div class="info-icon" aria-hidden="true">🎓</div>
+        <div class="info-label">Por Trimestre</div>
+        <div class="info-value">13 Lições</div>
+        <div class="info-sub">Uma por domingo</div>
+      </div>
+      <div class="info-card" tabindex="0">
+        <div class="info-icon" aria-hidden="true">✝️</div>
+        <div class="info-label">Propósito</div>
+        <div class="info-value">Crescer na Palavra</div>
+        <div class="info-sub">Estudo, debate e aplicação</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIMESTRE ATUAL -->
+  <div class="sep" aria-hidden="true"><span class="sep-text">✦ Trimestre Atual</span></div>
+
+  <!-- CAPA DA REVISTA -->
+  <article class="magazine-cover-wrap" aria-label="Revista do 2º Trimestre 2026">
+    <div class="mag-cover-img-col">
+      <div class="mag-cover-frame">
+        <img src="capa-revista-2t2026.jpg"
+             alt="Capa da Revista Lições Bíblicas — 2º Trimestre 2026 — Homens dos quais o Mundo não Era Digno"
+             id="capaImg"
+             loading="lazy"
+             style="width:100%;display:block"
+             onerror="this.style.display='none';document.getElementById('capaPh').style.display='flex'">
+        <div id="capaPh" style="display:none;width:100%;height:180px;background:linear-gradient(135deg,#07122a,#1a3464);flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:16px;text-align:center">
+          <div style="font-size:36px" aria-hidden="true">📖</div>
+          <div style="font-family:Cinzel,serif;font-size:11px;letter-spacing:1px;color:#d4a84a;line-height:1.4">Lições Bíblicas<br>2º Trimestre 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="mag-cover-info">
+      <div class="mag-tag">📚 Revista do Trimestre</div>
+      <h2 class="mag-title">Homens dos quais o<br>Mundo não Era Digno</h2>
+      <p class="mag-sub">O Legado de Abraão, Isaque e Jacó</p>
+      <div class="mag-meta" aria-label="Detalhes da revista">
+        <span class="mag-meta-pill">2º Trimestre · 2026</span>
+        <span class="mag-meta-pill">Adultos · Professor</span>
+        <span class="mag-meta-pill">CPAD</span>
+      </div>
+      <blockquote class="mag-verse">"Todos estes morreram na fé… eram estrangeiros e peregrinos sobre a terra."<cite class="mag-verse-ref">Hebreus 11.13</cite></blockquote>
+      <div class="mag-lessons-count" aria-label="Total de lições">13 lições · Abril — Junho 2026</div>
+    </div>
+  </article>
+
+  <!-- LINHA DO TEMPO -->
+  <section class="tl-wrap" aria-labelledby="tl-head">
+    <div class="tl-header">
+      <span class="tl-title" id="tl-head">📍 Linha do Tempo — 2º Trimestre 2026</span>
+      <span class="tl-prog-txt" id="tlProgTxt" aria-live="polite">Semana 7 de 13</span>
+    </div>
+    <!-- HORIZONTAL (tablet/desktop) -->
+    <div class="tl-scroll" aria-hidden="true">
+      <div class="tl-horiz" id="tlHoriz">
+        <div class="tl-line-bg"></div>
+        <div class="tl-line-fill" id="tlFill"></div>
+      </div>
+    </div>
+    <!-- VERTICAL (mobile — acessível) -->
+    <div class="tl-vert" id="tlVert" role="list" aria-label="Lições do trimestre"></div>
+  </section>
+
+  <!-- CARD DO TRIMESTRE -->
+  <section class="trim-card" aria-labelledby="trim-head">
+    <a class="trim-banner" href="2026-t2/index.html" aria-label="Ver detalhes do 2º Trimestre 2026">
+      <div class="trim-tag">2º Trimestre · 2026 &nbsp;·&nbsp; Abril — Junho</div>
+      <h2 class="trim-title" id="trim-head">Homens dos quais o Mundo não Era Digno</h2>
+      <p class="trim-sub">O Legado de Abraão, Isaque e Jacó</p>
+      <div class="trim-pills" aria-label="Status do trimestre">
+        <span class="trim-pill gold">7 lições publicadas · Lições 01–07</span>
+        <span class="trim-pill green">Em andamento</span>
+        <span class="trim-pill">Gên. 12–33 · Hb 11</span>
+        <span class="trim-pill">13 lições</span>
+        <span class="trim-pill">2º Trim. 2026</span>
+      </div>
+      <div class="trim-prog-row">
+        <div class="trim-prog-track" role="progressbar" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso do trimestre">
+          <div class="trim-prog-fill" id="trimFill"></div>
+        </div>
+        <span class="trim-prog-lbl">7 / 13</span>
+      </div>
+      <span class="trim-cta">Ver Trimestre →</span>
+    </a>
+    <div class="lessons-grid" id="lessonsGrid" aria-label="Grade de lições do trimestre"></div>
+  </section>
+
+  <!-- WHATSAPP -->
+  <div class="wa-wrap" role="region" aria-label="Compartilhamento">
+    <div class="wa-icon" aria-hidden="true">📲</div>
+    <div style="flex:1">
+      <div class="wa-title">Compartilhar no WhatsApp</div>
+      <div class="wa-desc">Avise a turma quando uma nova lição for liberada — um clique e a mensagem já está pronta.</div>
+    </div>
+    <a class="wa-btn" id="waBannerBtn" href="#" target="_blank" rel="noopener noreferrer" aria-label="Compartilhar lição atual no WhatsApp">📤 Enviar agora</a>
+  </div>
+
+  <!-- TRIMESTRE ANTERIOR -->
+  <div class="sep" aria-hidden="true"><span class="sep-text">✦ Trimestre Anterior</span></div>
+  <article class="prev-card" aria-label="Trimestre anterior">
+    <div class="prev-banner" style="cursor:default;opacity:.6">
+      <div class="prev-badge">
+        <div class="prev-badge-trim">1º Trim.</div>
+        <div class="prev-badge-year">2026</div>
+      </div>
+      <div class="prev-info">
+        <div class="prev-title">[Título do Trimestre Anterior]</div>
+        <div class="prev-sub">[Subtítulo ou versículo tema]</div>
+        <div class="prev-stats">
+          <span class="prev-stat">13 lições</span>
+          <span class="prev-stat">Jan — Mar 2026</span>
+          <span class="prev-stat">Concluído</span>
+        </div>
+      </div>
+      <div class="prev-arrow" aria-hidden="true">→</div>
+    </div>
+  </article>
+
+  <!-- PRÓXIMOS -->
+  <div class="sep" aria-hidden="true"><span class="sep-text">✦ Próximos Trimestres</span></div>
+  <div class="future-card" aria-label="3º Trimestre 2026 — em preparação">
+    <div class="future-icon" aria-hidden="true">🕐</div>
+    <div><div class="future-tag">3º Trimestre · 2026 · Jul — Set</div><div class="future-title">Conteúdo em preparação</div></div>
+    <div class="future-badge">Em breve</div>
+  </div>
+  <div class="future-card" aria-label="4º Trimestre 2026 — em preparação">
+    <div class="future-icon" aria-hidden="true">🕐</div>
+    <div><div class="future-tag">4º Trimestre · 2026 · Out — Dez</div><div class="future-title">Conteúdo em preparação</div></div>
+    <div class="future-badge">Em breve</div>
+  </div>
+
+  <!-- EQUIPE -->
+  <div class="sep" aria-hidden="true"><span class="sep-text">✦ Nossa Equipe</span></div>
+  <section aria-labelledby="team-head">
+    <h2 id="team-head" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden">Equipe da EBD</h2>
+    <div class="team-grid" id="teamGrid"></div>
+  </section>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer role="contentinfo">
+  <div class="footer-logo">✦ Assembleia de Deus Geração Eleita ✦</div>
+  <div class="footer-dev">Desenvolvido pelo Sup. Jarlam Antonio · EBD ADGE 2026</div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════
+   DADOS DO SISTEMA — JSON CENTRAL
+   (fonte única de verdade, fácil de manter)
+═══════════════════════════════════════ */
+const CONFIG = {
+  nextLesson: {
+    num: '08',
+    title: 'Isaque: Herdeiro da Promessa',
+    ref: 'Gênesis 24',
+    date: '2026-05-24T10:00:00',
+    url: '2026-t2/licao-08.html',
+  },
+  waMessage: n => `🔓 *Lição ${n.num} liberada!*\n\n📖 *${n.title}*\n${n.ref}\n\nAcesse: ${window.location.origin}/2026-t2/licao-08.html\n\n_EBD · Assembleia de Deus Geração Eleita_`,
+};
+
+const LESSONS = [
+  {n:'01',t:'Abraão: Seu Chamado e Sua Jornada de Fé',    r:'Gên. 12.1–9',   s:'done',    w:'5 Abr',  url:'2026-t2/licao-01.html'},
+  {n:'02',t:'A Fé de Abraão nas Promessas de Deus',       r:'Gên. 12.10–20', s:'done',    w:'12 Abr', url:'2026-t2/licao-02.html'},
+  {n:'03',t:'A Impaciência na Espera da Promessa',        r:'Gênesis 13',    s:'done',    w:'19 Abr', url:'2026-t2/licao-03.html'},
+  {n:'04',t:'A Confirmação de Uma Promessa',              r:'Gênesis 15',    s:'done',    w:'26 Abr', url:'2026-t2/licao-04.html'},
+  {n:'05',t:'O Juízo contra Sodoma e Gomorra',            r:'Gênesis 19',    s:'done',    w:'3 Mai',  url:'2026-t2/licao-05.html'},
+  {n:'06',t:'O Nascimento de Isaque',                     r:'Gên. 21.1–7',   s:'done',    w:'10 Mai', url:'2026-t2/licao-06.html'},
+  {n:'07',t:'Uma Prova de Fé: A Entrega de Isaque',       r:'Gên. 22.1–19',  s:'done',    w:'17 Mai', url:'2026-t2/licao-07.html'},
+  {n:'08',t:'Isaque: Herdeiro da Promessa',               r:'Gênesis 24',    s:'current', w:'24 Mai', url:'2026-t2/licao-08.html'},
+  {n:'09',t:'Jacó e Esaú: Irmãos em Conflito',           r:'Gên. 25–27',    s:'locked',  w:'31 Mai', url:''},
+  {n:'10',t:'A Experiência Transformadora de Jacó',       r:'Gên. 28–32',    s:'locked',  w:'7 Jun',  url:''},
+  {n:'11',t:'Jacó: De Enganador a Homem de Honra',        r:'Gênesis 32–33', s:'locked',  w:'14 Jun', url:''},
+  {n:'12',t:'A Reconciliação de Jacó com Esaú',           r:'Gênesis 33',    s:'locked',  w:'21 Jun', url:''},
+  {n:'13',t:'O Legado de Fé de Abraão, Isaque e Jacó',   r:'Hebreus 11',    s:'locked',  w:'28 Jun', url:''},
+];
+
+const TEAM = [
+  {initials:'JA',name:'Jarlam Antonio',   role:'Superintendente', roleKey:'super',   detail:'Responsável pela EBD<br>ADGE — 2026',         highlight:true},
+  {initials:'IN',name:'[Nome Secretário]',role:'Secretário(a)',   roleKey:'sec',     detail:'[Cargo ou função]',                           highlight:false},
+  {initials:'PS',name:'Dc. Paulo Silva',  role:'Professor',       roleKey:'prof',    detail:'Lições 06 e 07<br>2º Trimestre 2026',         highlight:false},
+  {initials:'??',name:'[Professor]',      role:'Professor',       roleKey:'prof',    detail:'[Lições responsáveis]<br>2º Trimestre 2026',  highlight:false},
+  {initials:'??',name:'[Professor]',      role:'Professor',       roleKey:'prof',    detail:'[Lições responsáveis]<br>2º Trimestre 2026',  highlight:false},
+  {initials:'JA',name:'Sup. Jarlam Antonio',role:'Desenvolvedor', roleKey:'dev',     detail:'Plataforma digital da EBD',                   highlight:false},
+];
+
+const VERSES = [
+  {t:'"Pela fé Abraão obedeceu quando foi chamado para sair para um lugar que havia de receber por herança."',r:'Hebreus 11.8'},
+  {t:'"E creu Abraão a Deus, e isso lhe foi imputado como justiça."',r:'Romanos 4.3'},
+  {t:'"Jeová-Jirê — o Senhor proverá."',r:'Gênesis 22.14'},
+  {t:'"Não temas, porque eu sou contigo; não te assombres, porque eu sou teu Deus."',r:'Isaías 41.10'},
+  {t:'"O Senhor é o meu pastor e nada me faltará."',r:'Salmo 23.1'},
+  {t:'"Confia no Senhor de todo o teu coração e não te estribes no teu próprio entendimento."',r:'Provérbios 3.5'},
+  {t:'"A fé é o firme fundamento das coisas que se esperam e a prova das coisas que não se veem."',r:'Hebreus 11.1'},
+  {t:'"Esforça-te por te apresentares a Deus aprovado, como obreiro que não tem de que se envergonhar."',r:'2 Timóteo 2.15'},
+  {t:'"Toda a Escritura é divinamente inspirada e proveitosa para ensinar."',r:'2 Timóteo 3.16'},
+  {t:'"Lâmpada para os meus pés é a tua palavra e luz para o meu caminho."',r:'Salmo 119.105'},
+  {t:'"Buscai ao Senhor enquanto se pode achar, invocai-o enquanto está perto."',r:'Isaías 55.6'},
+  {t:'"O Senhor te abençoe e te guarde."',r:'Números 6.24'},
+  {t:'"Sede fortes e corajosos, não temais nem vos assusteis."',r:'Deuteronômio 31.6'},
+];
+
+const SEARCH_INDEX = LESSONS.map(l => ({
+  n: `Lição ${l.n}`,
+  t: l.t,
+  r: l.r,
+  h: l.url,
+  k: l.t.toLowerCase() + ' ' + l.r.toLowerCase()
+})).filter(l => l.h);
+
+/* ═══════════════════════════════════════
+   TEMA
+═══════════════════════════════════════ */
+function toggleTheme(){
+  const isLight = document.body.classList.toggle('light');
+  document.getElementById('btnTheme').textContent = isLight ? '🌙' : '☀️';
+  document.getElementById('btnTheme').setAttribute('aria-label', isLight ? 'Ativar modo escuro' : 'Ativar modo claro');
+  try { localStorage.setItem('ebd_theme', isLight ? 'light' : 'dark'); } catch(e){}
+}
+try {
+  if(localStorage.getItem('ebd_theme') === 'light'){
+    document.body.classList.add('light');
+    document.getElementById('btnTheme').textContent = '🌙';
+  }
+} catch(e){}
+
+/* ═══════════════════════════════════════
+   LOGO
+═══════════════════════════════════════ */
+(function(){
+  const img = document.getElementById('logoImg');
+  img.addEventListener('load', () => { img.style.display = 'block'; });
+  img.src = 'logo-adge.jpg';
+})();
+
+/* ═══════════════════════════════════════
+   VERSÍCULO DA SEMANA
+═══════════════════════════════════════ */
+(function(){
+  const wn = Math.floor((Date.now() - new Date(new Date().getFullYear(),0,1)) / (7*864e5));
+  const v = VERSES[wn % VERSES.length];
+  document.getElementById('weekVerse').textContent = v.t;
+  document.getElementById('weekRef').textContent = v.r;
+})();
+
+/* ═══════════════════════════════════════
+   CONTAGEM REGRESSIVA
+═══════════════════════════════════════ */
+(function(){
+  function pad(n){ return String(n).padStart(2,'0'); }
+  const target = new Date(CONFIG.nextLesson.date);
+  const ids = ['cdD','cdH','cdM','cdS'];
+  function tick(){
+    const diff = target - new Date();
+    if(diff <= 0){ ids.forEach(id => document.getElementById(id).textContent='00'); return; }
+    const vals = [
+      Math.floor(diff/864e5),
+      Math.floor(diff%864e5/36e5),
+      Math.floor(diff%36e5/6e4),
+      Math.floor(diff%6e4/1e3)
+    ];
+    ids.forEach((id,i) => document.getElementById(id).textContent = pad(vals[i]));
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+
+/* ═══════════════════════════════════════
+   WHATSAPP
+═══════════════════════════════════════ */
+(function(){
+  const msg = encodeURIComponent(CONFIG.waMessage(CONFIG.nextLesson));
+  const url = 'https://wa.me/?text=' + msg;
+  document.getElementById('waShareBtn').href = url;
+  document.getElementById('waBannerBtn').href = url;
+})();
+
+/* ═══════════════════════════════════════
+   LINHA DO TEMPO — renderização dinâmica
+═══════════════════════════════════════ */
+(function(){
+  const horiz = document.getElementById('tlHoriz');
+  const vert  = document.getElementById('tlVert');
+  const done  = LESSONS.filter(x => x.s === 'done').length;
+  const pct   = Math.round((done / LESSONS.length) * 100);
+
+  LESSONS.forEach(l => {
+    // Horizontal
+    const step = document.createElement('div');
+    step.className = 'tl-step ' + l.s;
+    step.innerHTML = (l.s==='current' ? '<div class="tl-current-tag">Atual</div>' : '') +
+      '<div class="tl-dot">' + (l.s==='done' ? '✓' : l.n) + '</div>' +
+      '<div class="tl-label">' + l.t + '</div>' +
+      '<div class="tl-week">' + l.w + '</div>';
+    horiz.appendChild(step);
+
+    // Vertical (acessível)
+    const vi = document.createElement('div');
+    vi.className = 'tl-vert-item ' + l.s;
+    vi.setAttribute('role','listitem');
+    vi.setAttribute('aria-label', `Lição ${l.n} — ${l.t} — ${l.w}${l.s==='current'?' (Atual)':l.s==='done'?' (Concluída)':' (Em breve)'}`);
+    vi.innerHTML =
+      '<div class="tl-vert-dot" aria-hidden="true">' + (l.s==='done' ? '✓' : l.n) + '</div>' +
+      '<div class="tl-vert-info">' +
+        '<div class="tl-vert-label">' + l.t + '</div>' +
+        '<div class="tl-vert-week">' + l.w + '</div>' +
+      '</div>' +
+      (l.s==='current' ? '<div class="tl-vert-badge" aria-label="Lição atual">Atual</div>' : '');
+    vert.appendChild(vi);
+  });
+
+  setTimeout(() => {
+    document.getElementById('tlFill').style.width = pct + '%';
+  }, 500);
+})();
+
+/* ═══════════════════════════════════════
+   GRADE DE LIÇÕES — renderização dinâmica
+═══════════════════════════════════════ */
+(function(){
+  const grid = document.getElementById('lessonsGrid');
+  LESSONS.forEach(l => {
+    if(l.s === 'locked'){
+      const div = document.createElement('div');
+      div.className = 'lc soon';
+      div.setAttribute('aria-label', `Lição ${l.n} — ${l.t} — Em breve`);
+      div.innerHTML = `<span class="chip-lock" aria-hidden="true">🔒</span><div class="chip-num">Lição ${l.n}</div><div class="chip-title">${l.t}</div><div class="chip-ref">${l.r}</div>`;
+      grid.appendChild(div);
+    } else {
+      const a = document.createElement('a');
+      a.className = 'lc ' + (l.s === 'current' ? 'thisweek' : 'active');
+      a.href = l.url || '#';
+      a.setAttribute('aria-label', `Lição ${l.n} — ${l.t} — ${l.r}${l.s==='current'?' (Esta semana)':' (Concluída)'}`);
+      a.innerHTML =
+        (l.s === 'done' ? '<div class="chip-done" aria-hidden="true">✓</div>' : '') +
+        `<div class="chip-num">Lição ${l.n}</div>` +
+        `<div class="chip-title">${l.t}</div>` +
+        `<div class="chip-ref">${l.r}</div>`;
+      grid.appendChild(a);
+    }
+  });
+
+  setTimeout(() => { document.getElementById('trimFill').style.width = '54%'; }, 600);
+})();
+
+/* ═══════════════════════════════════════
+   EQUIPE — renderização dinâmica
+═══════════════════════════════════════ */
+(function(){
+  const grid = document.getElementById('teamGrid');
+  TEAM.forEach(m => {
+    const div = document.createElement('div');
+    div.className = 'team-card' + (m.highlight ? ' highlight' : '');
+    div.innerHTML =
+      `<div class="team-avatar" aria-hidden="true">${m.initials}</div>` +
+      `<div class="team-role ${m.roleKey}">${m.role}</div>` +
+      `<div class="team-name">${m.name}</div>` +
+      `<div class="team-detail">${m.detail}</div>`;
+    grid.appendChild(div);
+  });
+})();
+
+/* ═══════════════════════════════════════
+   BUSCA
+═══════════════════════════════════════ */
+function doSearch(q){
+  const box  = document.getElementById('searchDrop');
+  const term = q.trim().toLowerCase();
+  if(!term || term.length < 2){ box.classList.remove('open'); return; }
+  const res = SEARCH_INDEX.filter(d =>
+    d.t.toLowerCase().includes(term) ||
+    d.k.includes(term) ||
+    d.r.toLowerCase().includes(term) ||
+    d.n.toLowerCase().includes(term)
+  );
+  if(res.length){
+    box.innerHTML = res.map(r =>
+      `<a class="sr-item" href="${r.h}" role="option" aria-label="${r.n} — ${r.t}">
+        <div class="sr-num">${r.n}</div>
+        <div class="sr-title">${r.t}</div>
+        <div class="sr-ref">${r.r}</div>
+      </a>`
+    ).join('');
+  } else {
+    box.innerHTML = `<div class="sr-empty" role="option" aria-selected="false">Nenhum resultado para "${q}"</div>`;
+  }
+  box.classList.add('open');
+}
+
+document.addEventListener('click', e => {
+  if(!e.target.closest('.search-wrap')){
+    document.getElementById('searchDrop').classList.remove('open');
+  }
+});
+
+document.getElementById('searchInput').addEventListener('keydown', e => {
+  if(e.key === 'Escape') document.getElementById('searchDrop').classList.remove('open');
+});
+
+/* ═══════════════════════════════════════
+   PWA — SERVICE WORKER
+═══════════════════════════════════════ */
+if('serviceWorker' in navigator){
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+</script>
+</body>
+</html>
