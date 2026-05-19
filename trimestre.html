@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2º Trimestre 2026 · Visão Geral · EBD ADGE</title>
+<meta name="theme-color" content="#07122a">
+<meta property="og:title" content="2º Trimestre 2026 — Homens dos quais o Mundo não Era Digno">
+<meta property="og:description" content="Visão teológica completa do trimestre — O Legado de Abraão, Isaque e Jacó · EBD ADGE 2026">
+<meta property="og:image" content="https://i.postimg.cc/5NMfrKxg/snapinsta-com-br-6a0882db8b855-(1).jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --gold:#d4a84a;--gold-light:#ecc46a;--gold-dark:#a07828;
+  --navy:#07122a;--navy-mid:#0d1f3c;
+  --text:#d0dff5;--text-mid:#a0bcdc;--text-light:#6080a0;
+  --bg:#060c18;--bg-card:#0a1428;--border:#1a2840;
+  --border-gold:rgba(212,168,74,0.25);
+  --r:14px;--gap:20px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:60px}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(212,168,74,0.07) 0%,transparent 55%),linear-gradient(160deg,#020810 0%,#07122a 55%,#0c1e3c 100%);pointer-events:none;z-index:0}
+
+/* ── NAV ── */
+.nav{position:sticky;top:0;z-index:100;background:rgba(6,12,24,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-gold);padding:12px 20px;display:flex;align-items:center;gap:12px}
+.nav-back{background:none;border:1px solid var(--border-gold);color:var(--gold);border-radius:8px;padding:7px 14px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;cursor:pointer;text-decoration:none;transition:background .2s}
+.nav-back:hover{background:rgba(212,168,74,0.08)}
+.nav-title{font-family:'Cinzel',serif;font-size:11px;letter-spacing:2px;color:rgba(255,255,255,0.6);text-transform:uppercase}
+
+/* ── WRAPPER ── */
+.wrap{max-width:640px;margin:0 auto;padding:0 16px;position:relative;z-index:1}
+
+/* ── HERO ── */
+.hero{text-align:center;padding:40px 0 32px}
+.hero-tag{font-family:'Cinzel',serif;font-size:9px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;margin-bottom:12px;opacity:.8}
+.hero-title{font-family:'Cinzel',serif;font-size:clamp(22px,6vw,34px);font-weight:700;color:#fff;line-height:1.2;margin-bottom:8px}
+.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(14px,3.5vw,18px);font-style:italic;color:var(--gold);margin-bottom:20px}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:24px}
+.pill{background:rgba(212,168,74,0.08);border:1px solid var(--border-gold);border-radius:20px;padding:5px 14px;font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--text-mid)}
+
+/* Divisor dourado */
+.divider{display:flex;align-items:center;gap:12px;margin:8px 0 32px}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--border-gold),transparent)}
+.divider span{font-family:'Cinzel',serif;font-size:8px;letter-spacing:3px;color:rgba(212,168,74,0.4);white-space:nowrap}
+
+/* ── SECTIONS ── */
+.section{margin-bottom:36px}
+.section-header{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.section-icon{font-size:20px}
+.section-title{font-family:'Cinzel',serif;font-size:12px;letter-spacing:3px;color:var(--gold);text-transform:uppercase}
+
+/* ── CARD BASE ── */
+.card{background:var(--bg-card);border:1px solid var(--border-gold);border-radius:var(--r);padding:20px;margin-bottom:12px}
+
+/* ── RESUMO TEOLÓGICO ── */
+.teol-intro{font-family:'Cormorant Garamond',serif;font-size:clamp(15px,3.5vw,18px);font-style:italic;color:var(--text-mid);line-height:1.8;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.teol-body{font-size:14px;color:var(--text-mid);line-height:1.8;margin-bottom:14px}
+.teol-body strong{color:var(--gold);font-weight:600}
+
+/* Tópicos */
+.topics{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.topic{display:flex;align-items:flex-start;gap:12px;padding:12px;background:rgba(212,168,74,0.04);border-left:3px solid var(--gold);border-radius:0 8px 8px 0}
+.topic-icon{font-size:18px;flex-shrink:0;margin-top:1px}
+.topic-text{font-size:13px;color:var(--text-mid);line-height:1.6}
+.topic-text strong{color:#fff;display:block;margin-bottom:2px;font-family:'Cinzel',serif;font-size:10px;letter-spacing:1px}
+
+/* Aplicação cotidiana */
+.aplicacao{background:rgba(212,168,74,0.06);border:1px solid rgba(212,168,74,0.2);border-radius:10px;padding:16px;margin-top:16px}
+.aplicacao-title{font-family:'Cinzel',serif;font-size:9px;letter-spacing:3px;color:var(--gold);margin-bottom:10px}
+.aplicacao ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.aplicacao ul li{font-size:13px;color:var(--text-mid);line-height:1.6;padding-left:16px;position:relative}
+.aplicacao ul li::before{content:'→';position:absolute;left:0;color:var(--gold)}
+
+/* ── VERSÍCULO CHAVE ── */
+.verse-card{background:linear-gradient(135deg,rgba(212,168,74,0.08),rgba(212,168,74,0.03));border:1px solid rgba(212,168,74,0.3);border-radius:var(--r);padding:24px;text-align:center}
+.verse-text{font-family:'Cormorant Garamond',serif;font-size:clamp(16px,4vw,22px);font-style:italic;color:#fff;line-height:1.8;margin-bottom:12px}
+.verse-text em{color:var(--gold);font-style:normal}
+.verse-ref{font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:var(--gold);opacity:.8}
+
+/* ── MAPA DA JORNADA ── */
+.map-intro{font-size:13px;color:var(--text-mid);line-height:1.7;margin-bottom:16px}
+.journey{display:flex;flex-direction:column;gap:0}
+.journey-item{display:flex;gap:16px;position:relative}
+.journey-item:not(:last-child) .j-line{position:absolute;left:19px;top:40px;bottom:-8px;width:2px;background:linear-gradient(180deg,var(--gold),rgba(212,168,74,0.2))}
+.j-dot{width:40px;height:40px;border-radius:50%;border:2px solid var(--gold);background:var(--bg-card);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;z-index:1;box-shadow:0 0 16px rgba(212,168,74,0.2)}
+.j-content{flex:1;padding-bottom:24px}
+.j-name{font-family:'Cinzel',serif;font-size:12px;letter-spacing:1px;color:#fff;margin-bottom:4px}
+.j-lugares{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+.j-lugar{background:rgba(212,168,74,0.08);border:1px solid var(--border-gold);border-radius:12px;padding:3px 10px;font-size:11px;color:var(--gold)}
+.j-desc{font-size:12px;color:var(--text-light);line-height:1.6}
+
+/* ── LINHA DO TEMPO ── */
+.timeline{display:flex;flex-direction:column;gap:0}
+.tl-item{display:flex;gap:14px;position:relative}
+.tl-item:not(:last-child)::after{content:'';position:absolute;left:15px;top:34px;bottom:-4px;width:2px;background:linear-gradient(180deg,var(--border-gold),transparent)}
+.tl-dot{width:32px;height:32px;border-radius:50%;border:2px solid var(--border-gold);background:var(--bg-card);display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0;z-index:1}
+.tl-dot.highlight{border-color:var(--gold);box-shadow:0 0 12px rgba(212,168,74,0.3)}
+.tl-content{flex:1;padding-bottom:20px}
+.tl-date{font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:var(--gold);margin-bottom:2px}
+.tl-event{font-size:13px;color:#fff;font-weight:600;margin-bottom:2px}
+.tl-detail{font-size:12px;color:var(--text-light);line-height:1.5}
+.tl-world{display:flex;align-items:center;gap:6px;margin-top:6px;padding:6px 10px;background:rgba(255,255,255,0.03);border-radius:6px;border-left:2px solid rgba(212,168,74,0.3)}
+.tl-world-icon{font-size:12px}
+.tl-world-text{font-size:11px;color:var(--text-light);font-style:italic}
+
+/* ── LIÇÕES RESUMO ── */
+.licoes-grid{display:flex;flex-direction:column;gap:8px}
+.licao-row{display:flex;align-items:flex-start;gap:12px;padding:12px;background:var(--bg-card);border:1px solid var(--border);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .2s,background .2s}
+.licao-row:hover{border-color:var(--border-gold);background:rgba(212,168,74,0.04)}
+.licao-num{width:36px;height:36px;border-radius:8px;background:rgba(212,168,74,0.08);border:1px solid var(--border-gold);display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:11px;color:var(--gold);flex-shrink:0}
+.licao-info{flex:1}
+.licao-titulo{font-size:13px;color:#fff;font-weight:600;margin-bottom:2px}
+.licao-resumo{font-size:12px;color:var(--text-light);line-height:1.5}
+.licao-ref{font-family:'Cinzel',serif;font-size:9px;letter-spacing:1px;color:rgba(212,168,74,0.5);margin-top:4px}
+
+/* ── FOOTER ── */
+.footer{text-align:center;margin-top:40px;font-family:'Cinzel',serif;font-size:8px;letter-spacing:2px;color:rgba(255,255,255,0.15)}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.wrap > *{animation:fadeUp .5s ease both}
+.section:nth-child(2){animation-delay:.1s}
+.section:nth-child(3){animation-delay:.15s}
+.section:nth-child(4){animation-delay:.2s}
+.section:nth-child(5){animation-delay:.25s}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="../index.html" class="nav-back">← Início</a>
+  <span class="nav-title">Visão do Trimestre</span>
+</nav>
+
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-tag">✦ 2º Trimestre · 2026 ✦</div>
+    <h1 class="hero-title">Homens dos quais o Mundo<br>não Era Digno</h1>
+    <div class="hero-sub">O Legado de Abraão, Isaque e Jacó</div>
+    <div class="hero-pills">
+      <span class="pill">Gênesis 12–33 · Hebreus 11</span>
+      <span class="pill">13 Lições</span>
+      <span class="pill">Abril — Junho 2026</span>
+    </div>
+  </div>
+
+  <div class="divider"><span>✦ Conteúdo ✦</span></div>
+
+  <!-- 1. VERSÍCULO CHAVE -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📜</span>
+      <span class="section-title">Versículo-Chave do Trimestre</span>
+    </div>
+    <div class="verse-card">
+      <div class="verse-text">
+        "Pela fé, <em>Abraão</em> obedeceu quando foi chamado para sair para um lugar que havia de receber por herança; e saiu, <em>não sabendo para onde ia.</em>"
+      </div>
+      <div class="verse-ref">Hebreus 11.8</div>
+    </div>
+  </div>
+
+  <!-- 2. RESUMO TEOLÓGICO -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">✝️</span>
+      <span class="section-title">Resumo Teológico</span>
+    </div>
+    <div class="card">
+      <div class="teol-intro">
+        "O que Deus começa em uma geração, Ele conclui através das gerações seguintes — cada passo de fé deixa um legado eterno."
+      </div>
+      <div class="teol-body">
+        Este trimestre a revista nos conduz pela <strong>jornada dos patriarcas</strong> — homens comuns que responderam a um Deus extraordinário. A narrativa central não é sobre perfeição humana, mas sobre a <strong>fidelidade divina</strong> que persiste apesar das falhas, dúvidas e desvios de seus escolhidos.
+      </div>
+      <div class="teol-body">
+        Abraão parte sem saber o destino. Isaque herda a promessa sem tê-la conquistado. Jacó a recebe mesmo sendo um enganador. A mensagem é clara: <strong>Deus não escolhe os perfeitos — Ele aperfeiçoa os escolhidos.</strong>
+      </div>
+
+      <div class="topics">
+        <div class="topic">
+          <div class="topic-icon">🕊️</div>
+          <div class="topic-text">
+            <strong>Fé como obediência</strong>
+            Abraão não esperou entender — ele partiu. A fé bíblica não é sentimento, é movimento em direção ao chamado mesmo na incerteza.
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-icon">🤲</div>
+          <div class="topic-text">
+            <strong>Promessa e paciência</strong>
+            Isaque nasceu 25 anos após a promessa. Deus não está atrasado — Ele opera no tempo certo, não no nosso tempo desejado.
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-icon">⚔️</div>
+          <div class="topic-text">
+            <strong>Transformação pelo encontro</strong>
+            Jacó lutou com Deus e saiu manco — mas saiu Israel. Todo encontro genuíno com Deus muda quem somos.
+          </div>
+        </div>
+        <div class="topic">
+          <div class="topic-icon">🌱</div>
+          <div class="topic-text">
+            <strong>Legado intergeracional</strong>
+            A fé de um pai planta sementes que os filhos colherão. Nosso compromisso hoje molda gerações futuras.
+          </div>
+        </div>
+      </div>
+
+      <div class="aplicacao">
+        <div class="aplicacao-title">✦ Aplicação para o nosso cotidiano</div>
+        <ul>
+          <li>Quando Deus chama, nem sempre revela o destino — confiar é parte do caminho</li>
+          <li>Promessas não cumpridas ainda não são promessas abandonadas</li>
+          <li>Nossas falhas não cancelam o propósito de Deus sobre nós</li>
+          <li>O legado que deixamos começa nas escolhas que fazemos hoje</li>
+          <li>Reconciliação (como Jacó e Esaú) é possível mesmo após anos de conflito</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. MAPA DA JORNADA -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">🗺️</span>
+      <span class="section-title">Mapa da Jornada</span>
+    </div>
+    <div class="card">
+      <div class="map-intro">Os patriarcas percorreram milhares de quilômetros seguindo a voz de Deus. Cada lugar marca um momento decisivo de fé, provação ou encontro com o Senhor.</div>
+      <div class="journey">
+
+        <div class="journey-item">
+          <div class="j-line"></div>
+          <div class="j-dot">👴</div>
+          <div class="j-content">
+            <div class="j-name">Abraão — O Chamado</div>
+            <div class="j-lugares">
+              <span class="j-lugar">Ur dos Caldeus</span>
+              <span class="j-lugar">Harã</span>
+              <span class="j-lugar">Canaã</span>
+              <span class="j-lugar">Egito</span>
+              <span class="j-lugar">Hebrom</span>
+            </div>
+            <div class="j-desc">Saiu de Ur sem saber o destino. Percorreu aprox. 1.600 km até Canaã. Em Hebrom (Mambré) recebeu a confirmação da promessa e onde Isaque nasceu.</div>
+          </div>
+        </div>
+
+        <div class="journey-item">
+          <div class="j-line"></div>
+          <div class="j-dot">🧒</div>
+          <div class="j-content">
+            <div class="j-name">Isaque — O Herdeiro</div>
+            <div class="j-lugares">
+              <span class="j-lugar">Berseba</span>
+              <span class="j-lugar">Monte Moriá</span>
+              <span class="j-lugar">Gerar</span>
+            </div>
+            <div class="j-desc">Viveu principalmente em Canaã, diferente do pai. Em Gerar fez aliança com Abimeleque. O Monte Moriá (onde foi oferecido) é hoje Jerusalém.</div>
+          </div>
+        </div>
+
+        <div class="journey-item">
+          <div class="j-dot">🏃</div>
+          <div class="j-content">
+            <div class="j-name">Jacó — A Transformação</div>
+            <div class="j-lugares">
+              <span class="j-lugar">Berseba</span>
+              <span class="j-lugar">Betel</span>
+              <span class="j-lugar">Harã (Padã-Arã)</span>
+              <span class="j-lugar">Peniel</span>
+              <span class="j-lugar">Siquém</span>
+            </div>
+            <div class="j-desc">Fugiu para Harã (aprox. 800 km), trabalhou 20 anos com Labão. Retornou transformado. Em Peniel lutou com Deus e recebeu o nome Israel.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. LINHA DO TEMPO -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">⏳</span>
+      <span class="section-title">Linha do Tempo Bíblica</span>
+    </div>
+    <div class="card">
+      <div class="map-intro">Datas aproximadas baseadas em cronologias bíblicas tradicionais (período ~2166–1805 a.C.) e eventos contemporâneos da humanidade.</div>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-dot highlight">✦</div>
+          <div class="tl-content">
+            <div class="tl-date">~2166 a.C.</div>
+            <div class="tl-event">Nascimento de Abraão em Ur</div>
+            <div class="tl-detail">Ur dos Caldeus era uma das cidades mais avançadas do mundo antigo, com escrita cuneiforme e templos monumentais (zigurates).</div>
+            <div class="tl-world">
+              <span class="tl-world-icon">🌍</span>
+              <span class="tl-world-text">No Egito, era o período do Antigo Império — as pirâmides de Gizé já existiam há menos de 400 anos.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot highlight">✦</div>
+          <div class="tl-content">
+            <div class="tl-date">~2091 a.C.</div>
+            <div class="tl-event">Abraão parte de Harã — Gên. 12</div>
+            <div class="tl-detail">Com 75 anos, Abraão abandona tudo e parte para Canaã. Início oficial da história do povo de Deus.</div>
+            <div class="tl-world">
+              <span class="tl-world-icon">🌍</span>
+              <span class="tl-world-text">A civilização mesopotâmica floresceu com o 3º Período de Ur. Código de Ur-Namu, primeira lei escrita da história.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot highlight">✦</div>
+          <div class="tl-content">
+            <div class="tl-date">~2066 a.C.</div>
+            <div class="tl-event">Nascimento de Isaque — Gên. 21</div>
+            <div class="tl-detail">25 anos após a promessa. Sara tinha 90 anos. O nome Isaque significa "ele ri" — riso de incredulidade que se tornou riso de alegria.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot highlight">✦</div>
+          <div class="tl-content">
+            <div class="tl-date">~2050 a.C.</div>
+            <div class="tl-event">Isaque no Monte Moriá — Gên. 22</div>
+            <div class="tl-detail">O teste máximo da fé de Abraão. Deus provê o sacrifício — "Jeová-Jireh". Este monte é hoje o local do Templo em Jerusalém.</div>
+            <div class="tl-world">
+              <span class="tl-world-icon">🌍</span>
+              <span class="tl-world-text">Na China, surgiam as primeiras dinastias. Na Europa, Stonehenge estava sendo finalizado (2000 a.C.).</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot highlight">✦</div>
+          <div class="tl-content">
+            <div class="tl-date">~2006 a.C.</div>
+            <div class="tl-event">Nascimento de Jacó e Esaú — Gên. 25</div>
+            <div class="tl-detail">Dois filhos, dois caminhos. Isaque tinha 60 anos. O conflito começa ainda no ventre — Esaú primeiro, Jacó agarrando seu calcanhar.</div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot highlight">✦</div>
+          <div class="tl-content">
+            <div class="tl-date">~1929 a.C.</div>
+            <div class="tl-event">Jacó foge para Harã — Gên. 28</div>
+            <div class="tl-detail">Em Betel, sonha com a escada ao céu. Deus confirma a aliança abraâmica a Jacó. Trabalha 20 anos com Labão, casa com Lia e Raquel.</div>
+            <div class="tl-world">
+              <span class="tl-world-icon">🌍</span>
+              <span class="tl-world-text">No Egito, Médio Império — período de grande prosperidade e expansão cultural egípcia.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot highlight">✦</div>
+          <div class="tl-content">
+            <div class="tl-date">~1909 a.C.</div>
+            <div class="tl-event">Jacó luta em Peniel — Gên. 32</div>
+            <div class="tl-detail">A noite mais importante da vida de Jacó. Luta com Deus, sai manco, mas recebe novo nome: Israel — "aquele que luta com Deus". Reconciliação com Esaú.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. RESUMO DAS LIÇÕES -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-icon">📖</span>
+      <span class="section-title">Resumo das 13 Lições</span>
+    </div>
+    <div class="licoes-grid">
+      <a href="2026-t2/licao-01.html" class="licao-row">
+        <div class="licao-num">01</div>
+        <div class="licao-info">
+          <div class="licao-titulo">Abraão: Seu Chamado e Sua Jornada de Fé</div>
+          <div class="licao-resumo">Deus chama um homem comum de Ur para mudar a história. A fé começa com um passo no escuro.</div>
+          <div class="licao-ref">Gênesis 12.1–9</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-02.html" class="licao-row">
+        <div class="licao-num">02</div>
+        <div class="licao-info">
+          <div class="licao-titulo">A Fé de Abraão nas Promessas de Deus</div>
+          <div class="licao-resumo">Mesmo no Egito, em meio a desvios e medos, a promessa de Deus permanece firme e inabalável.</div>
+          <div class="licao-ref">Gênesis 12.10–20</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-03.html" class="licao-row">
+        <div class="licao-num">03</div>
+        <div class="licao-info">
+          <div class="licao-titulo">A Impaciência na Espera da Promessa</div>
+          <div class="licao-resumo">Agar e Ismael — quando tentamos antecipar os planos de Deus, criamos problemas que duram gerações.</div>
+          <div class="licao-ref">Gênesis 13</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-04.html" class="licao-row">
+        <div class="licao-num">04</div>
+        <div class="licao-info">
+          <div class="licao-titulo">A Confirmação de Uma Promessa</div>
+          <div class="licao-resumo">Deus faz aliança com Abraão através do fogo. A promessa não depende da capacidade humana, mas do caráter divino.</div>
+          <div class="licao-ref">Gênesis 15</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-05.html" class="licao-row">
+        <div class="licao-num">05</div>
+        <div class="licao-info">
+          <div class="licao-titulo">O Juízo contra Sodoma e Gomorra</div>
+          <div class="licao-resumo">A intercessão de Abraão revela o coração de Deus: Ele julga com justiça mas ouve quem intercede com fé.</div>
+          <div class="licao-ref">Gênesis 19</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-06.html" class="licao-row">
+        <div class="licao-num">06</div>
+        <div class="licao-info">
+          <div class="licao-titulo">O Nascimento de Isaque</div>
+          <div class="licao-resumo">O impossível acontece. Sara ri — desta vez de alegria. Deus sempre cumpre o que prometeu, no tempo certo.</div>
+          <div class="licao-ref">Gênesis 21.1–7</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-07.html" class="licao-row">
+        <div class="licao-num">07</div>
+        <div class="licao-info">
+          <div class="licao-titulo">Uma Prova de Fé: A Entrega de Isaque</div>
+          <div class="licao-resumo">O maior teste de Abraão. No Monte Moriá, a fé ultrapassa o entendimento — e Deus provê o sacrifício.</div>
+          <div class="licao-ref">Gênesis 22.1–19</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-08.html" class="licao-row" style="border-color:var(--gold);background:rgba(212,168,74,0.06)">
+        <div class="licao-num" style="border-color:var(--gold);color:var(--gold)">08</div>
+        <div class="licao-info">
+          <div class="licao-titulo">Isaque: Herdeiro da Promessa ⭐ Esta Semana</div>
+          <div class="licao-resumo">A busca da esposa certa para Isaque revela a providência divina agindo nos detalhes da vida.</div>
+          <div class="licao-ref">Gênesis 24</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-09.html" class="licao-row">
+        <div class="licao-num">09</div>
+        <div class="licao-info">
+          <div class="licao-titulo">Jacó e Esaú: Irmãos em Conflito</div>
+          <div class="licao-resumo">Rivalidade familiar, vendas de herança e bênçãos roubadas — Deus usa até conflitos para cumprir seus propósitos.</div>
+          <div class="licao-ref">Gênesis 25–27</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-10.html" class="licao-row">
+        <div class="licao-num">10</div>
+        <div class="licao-info">
+          <div class="licao-titulo">A Experiência Transformadora de Jacó</div>
+          <div class="licao-resumo">A escada ao céu em Betel — um fugitivo encontra Deus e recebe a mesma promessa dada ao avô Abraão.</div>
+          <div class="licao-ref">Gênesis 28–32</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-11.html" class="licao-row">
+        <div class="licao-num">11</div>
+        <div class="licao-info">
+          <div class="licao-titulo">Jacó: De Enganador a Homem de Honra</div>
+          <div class="licao-resumo">20 anos de disciplina com Labão. Deus usa as circunstâncias para moldar o caráter de quem Ele escolhe.</div>
+          <div class="licao-ref">Gênesis 32–33</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-12.html" class="licao-row">
+        <div class="licao-num">12</div>
+        <div class="licao-info">
+          <div class="licao-titulo">A Reconciliação de Jacó com Esaú</div>
+          <div class="licao-resumo">Após décadas, dois irmãos se abraçam. A reconciliação é possível quando há humildade e disposição de perdoar.</div>
+          <div class="licao-ref">Gênesis 33</div>
+        </div>
+      </a>
+      <a href="2026-t2/licao-13.html" class="licao-row">
+        <div class="licao-num">13</div>
+        <div class="licao-info">
+          <div class="licao-titulo">O Legado de Fé de Abraão, Isaque e Jacó</div>
+          <div class="licao-resumo">Hebreus 11 celebra homens imperfeitos que confiaram num Deus perfeito — e mudaram o curso da história.</div>
+          <div class="licao-ref">Hebreus 11</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">✦ Assembleia de Deus Geração Eleita · EBD ADGE 2026 ✦</div>
+
+</div>
+</body>
+</html>
