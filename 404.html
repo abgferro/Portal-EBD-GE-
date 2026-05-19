@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página não encontrada · EBD ADGE</title>
+<meta name="theme-color" content="#07122a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --gold:#d4a84a;--gold-light:#ecc46a;--gold-dark:#a07828;
+  --navy:#07122a;--navy-mid:#0d1f3c;
+  --text:#d0dff5;--text-mid:#a0bcdc;--text-light:#6080a0;
+  --bg:#060c18;--bg-card:#0a1428;--border:#1a2840;
+  --border-gold:rgba(212,168,74,0.25);
+}
+html{height:100%;scroll-behavior:smooth}
+body{
+  font-family:'Source Sans 3',sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Fundo decorativo */
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(212,168,74,0.08) 0%, transparent 55%),
+    linear-gradient(160deg,#020810 0%,#07122a 55%,#0c1e3c 100%);
+  pointer-events:none;
+}
+
+.container{
+  max-width:480px;
+  width:100%;
+  text-align:center;
+  position:relative;
+  z-index:1;
+  animation:fadeUp .6s ease both;
+}
+
+/* Ícone central */
+.icon-wrap{
+  width:96px;height:96px;
+  border-radius:50%;
+  border:2px solid var(--border-gold);
+  background:rgba(212,168,74,0.06);
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 28px;
+  font-size:38px;
+  box-shadow:0 0 44px rgba(212,168,74,0.12),0 8px 32px rgba(0,0,0,0.5);
+  animation:pulse 3s ease infinite;
+}
+
+/* Código 404 */
+.code{
+  font-family:'Cinzel',serif;
+  font-size:clamp(56px,16vw,88px);
+  font-weight:700;
+  color:var(--gold);
+  line-height:1;
+  margin-bottom:4px;
+  text-shadow:0 0 40px rgba(212,168,74,0.3);
+  letter-spacing:4px;
+}
+
+/* Divisor */
+.divider{
+  display:flex;align-items:center;gap:12px;
+  margin:16px 0 20px;
+}
+.divider::before,.divider::after{
+  content:'';flex:1;height:1px;
+  background:linear-gradient(90deg,transparent,var(--border-gold),transparent);
+}
+.divider-text{
+  font-family:'Cinzel',serif;
+  font-size:8px;letter-spacing:3px;
+  color:rgba(212,168,74,0.45);
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+
+/* Título */
+.title{
+  font-family:'Cinzel',serif;
+  font-size:clamp(16px,4vw,22px);
+  font-weight:600;
+  color:#fff;
+  margin-bottom:10px;
+  line-height:1.3;
+}
+
+/* Subtítulo */
+.subtitle{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(14px,3vw,17px);
+  font-style:italic;
+  color:var(--text-mid);
+  line-height:1.7;
+  margin-bottom:8px;
+}
+
+/* Info adicional */
+.info{
+  font-size:13px;
+  color:var(--text-light);
+  margin-bottom:32px;
+  line-height:1.6;
+}
+
+/* Botões */
+.btn-group{
+  display:flex;flex-direction:column;gap:12px;
+  align-items:center;
+}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:linear-gradient(135deg,var(--gold-dark),var(--gold));
+  color:#07122a;
+  font-family:'Cinzel',serif;
+  font-size:11px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  padding:13px 28px;
+  border-radius:10px;
+  text-decoration:none;
+  border:none;cursor:pointer;
+  transition:transform .2s,box-shadow .2s,opacity .2s;
+  box-shadow:0 4px 20px rgba(212,168,74,0.3);
+  width:100%;max-width:280px;
+  justify-content:center;
+}
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 28px rgba(212,168,74,0.4);
+}
+.btn-secondary{
+  display:inline-flex;align-items:center;gap:8px;
+  background:none;
+  color:var(--gold);
+  font-family:'Cinzel',serif;
+  font-size:10px;font-weight:600;
+  letter-spacing:2px;text-transform:uppercase;
+  padding:11px 24px;
+  border-radius:10px;
+  text-decoration:none;
+  border:1px solid var(--border-gold);
+  cursor:pointer;
+  transition:background .2s,transform .2s;
+  width:100%;max-width:280px;
+  justify-content:center;
+}
+.btn-secondary:hover{
+  background:rgba(212,168,74,0.08);
+  transform:translateY(-1px);
+}
+
+/* Versículo */
+.verse-wrap{
+  margin-top:36px;
+  padding:16px 20px;
+  background:rgba(212,168,74,0.04);
+  border:1px solid rgba(212,168,74,0.12);
+  border-radius:10px;
+}
+.verse-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:13px;font-style:italic;
+  color:rgba(255,255,255,0.38);
+  line-height:1.7;margin-bottom:4px;
+}
+.verse-ref{
+  font-family:'Cinzel',serif;
+  font-size:9px;letter-spacing:1px;
+  color:rgba(212,168,74,0.4);
+}
+
+/* Footer */
+.footer{
+  margin-top:28px;
+  font-family:'Cinzel',serif;
+  font-size:8px;letter-spacing:2px;
+  color:rgba(255,255,255,0.18);
+  text-transform:uppercase;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(24px)}
+  to{opacity:1;transform:translateY(0)}
+}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 44px rgba(212,168,74,0.12),0 8px 32px rgba(0,0,0,0.5)}
+  50%{box-shadow:0 0 60px rgba(212,168,74,0.22),0 8px 32px rgba(0,0,0,0.5)}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="icon-wrap">📖</div>
+
+  <div class="code">404</div>
+
+  <div class="divider">
+    <span class="divider-text">✦ Página não encontrada ✦</span>
+  </div>
+
+  <h1 class="title">Esta lição ainda não foi publicada</h1>
+
+  <p class="subtitle">
+    O conteúdo que você buscou ainda está sendo preparado com cuidado e oração.
+  </p>
+
+  <p class="info">
+    As lições são liberadas toda semana antes do domingo.<br>
+    Fique atento às notificações da EBD ADGE!
+  </p>
+
+  <div class="btn-group">
+    <a href="../index.html" class="btn-primary">
+      ← Voltar ao início
+    </a>
+    <a href="javascript:history.back()" class="btn-secondary">
+      Página anterior
+    </a>
+  </div>
+
+  <div class="verse-wrap">
+    <p class="verse-text">"Lâmpada para os meus pés é a tua palavra e luz para o meu caminho."</p>
+    <span class="verse-ref">Salmo 119.105</span>
+  </div>
+
+  <div class="footer">✦ Assembleia de Deus Geração Eleita · EBD ADGE 2026 ✦</div>
+
+</div>
+
+</body>
+</html>
