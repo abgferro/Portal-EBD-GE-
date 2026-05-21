@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Arquivo · EBD ADGE</title>
+<meta name="description" content="Arquivo de trimestres anteriores — Escola Bíblica de Discípulos ADGE.">
+<meta name="theme-color" content="#07122a">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+/* ═══ RESET ═══ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+
+/* ═══ VARIÁVEIS ═══ */
+:root{
+  --gold:#d4a84a;--gold-light:#ecc46a;--gold-dark:#a07828;
+  --gold-glow:rgba(212,168,74,0.18);
+  --navy:#07122a;--navy-mid:#0d1f3c;--navy-light:#1a3464;--navy-deep:#030810;
+  --text:#ffffff;--text-mid:#d0dff5;--text-light:#a0bcdc;
+  --bg:#07122a;--bg-card:#0d1f3c;--bg-card-alt:#0a1828;
+  --border:#1a3060;--border-gold:rgba(212,168,74,0.25);
+  --green:#4caf7d;--green-dim:rgba(76,175,125,0.15);
+  --shadow:rgba(0,0,0,0.45);--shadow-gold:rgba(212,168,74,0.2);
+  --font-body:'Source Sans 3',sans-serif;
+  --font-display:'Cinzel',serif;
+  --font-serif:'Cormorant Garamond',serif;
+  --r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:20px;
+  --t-fast:.15s ease;--t-base:.22s ease;--t-slow:.4s ease;
+}
+body.light{
+  --text:#0a1628;--text-mid:#1a3050;--text-light:#3a5870;
+  --bg:#f0ece2;--bg-card:#ffffff;--bg-card-alt:#f5f2eb;
+  --border:#d0c8b0;--border-gold:rgba(160,120,40,0.3);
+  --shadow:rgba(10,22,40,0.10);--shadow-gold:rgba(160,120,40,0.15);
+}
+body{font-family:var(--font-body);background:var(--bg);color:var(--text);min-height:100vh;transition:background var(--t-slow),color var(--t-slow);-webkit-font-smoothing:antialiased;}
+
+/* ═══ TEMA ═══ */
+#btnTheme{position:fixed;top:14px;right:14px;width:40px;height:40px;border-radius:50%;background:#07122a;border:1px solid var(--border-gold);color:var(--gold);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:999;box-shadow:0 2px 12px var(--shadow);transition:background var(--t-base),transform var(--t-fast)}
+#btnTheme:hover{background:rgba(212,168,74,0.15);transform:scale(1.08)}
+
+/* ═══ HEADER SIMPLES ═══ */
+.arq-header{background:linear-gradient(160deg,#020810 0%,#07122a 55%,#0c1e3c 100%);padding:40px 20px 32px;text-align:center;border-bottom:1px solid rgba(212,168,74,0.12);position:relative;overflow:hidden}
+.arq-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% -10%,rgba(212,168,74,0.08) 0%,transparent 60%);pointer-events:none}
+.arq-back{position:absolute;top:16px;left:16px;background:rgba(255,255,255,0.05);border:1px solid var(--border-gold);color:var(--gold);border-radius:var(--r-sm);padding:7px 14px;font-family:var(--font-display);font-size:9px;letter-spacing:2px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:background var(--t-base)}
+.arq-back:hover{background:rgba(212,168,74,0.1)}
+.arq-logo{width:72px;height:72px;border-radius:50%;border:2px solid rgba(212,168,74,0.4);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;overflow:hidden;background:#07122a;box-shadow:0 0 32px rgba(212,168,74,0.15)}
+.arq-logo img{width:100%;height:100%;object-fit:cover}
+.arq-logo-ph{font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--gold);letter-spacing:2px}
+.arq-tag{font-family:var(--font-display);font-size:9px;letter-spacing:4px;color:rgba(212,168,74,0.5);text-transform:uppercase;margin-bottom:8px}
+.arq-title{font-family:var(--font-display);font-size:clamp(18px,4vw,28px);font-weight:700;color:#fff;margin-bottom:6px}
+.arq-sub{font-family:var(--font-serif);font-size:clamp(13px,2vw,15px);font-style:italic;color:rgba(255,255,255,0.38);max-width:440px;margin:0 auto}
+
+/* ═══ MAIN ═══ */
+main{max-width:860px;margin:0 auto;padding:32px 16px 80px}
+
+/* ═══ SEPARADOR ═══ */
+.sep{display:flex;align-items:center;gap:14px;margin:36px 0 20px}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+.sep-text{font-family:var(--font-display);font-size:10px;letter-spacing:4px;color:var(--gold);white-space:nowrap;text-transform:uppercase}
+
+/* ═══ CARD DO TRIMESTRE ARQUIVADO ═══ */
+.trim-arq{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;margin-bottom:28px;animation:fadeUp .5s ease both}
+.trim-arq-banner{background:linear-gradient(135deg,#060e1e,#0a1828);padding:20px;display:flex;align-items:center;gap:16px;cursor:pointer;transition:background var(--t-base);user-select:none}
+.trim-arq-banner:hover{background:linear-gradient(135deg,#080f1e,#0c1c30)}
+.trim-arq-badge{background:rgba(212,168,74,0.07);border:1px solid rgba(212,168,74,0.2);border-radius:var(--r-sm);padding:10px 14px;text-align:center;flex-shrink:0;min-width:62px}
+.trim-arq-badge-num{font-family:var(--font-display);font-size:10px;letter-spacing:2px;color:rgba(212,168,74,0.55)}
+.trim-arq-badge-year{font-family:var(--font-display);font-size:16px;color:rgba(255,255,255,0.65);font-weight:600;line-height:1.2}
+.trim-arq-info{flex:1}
+.trim-arq-periodo{font-family:var(--font-display);font-size:8px;letter-spacing:3px;color:rgba(212,168,74,0.45);text-transform:uppercase;margin-bottom:4px}
+.trim-arq-nome{font-family:var(--font-display);font-size:clamp(13px,3vw,17px);color:rgba(255,255,255,0.85);font-weight:600;margin-bottom:3px;line-height:1.3}
+.trim-arq-sub{font-family:var(--font-serif);font-size:13px;font-style:italic;color:rgba(255,255,255,0.38)}
+.trim-arq-stats{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.trim-arq-stat{font-family:var(--font-display);font-size:9px;letter-spacing:1px;color:rgba(212,168,74,0.6);background:rgba(212,168,74,0.07);border:1px solid rgba(212,168,74,0.15);border-radius:6px;padding:2px 8px}
+.trim-arq-stat.verde{color:var(--green);background:rgba(76,175,125,0.07);border-color:rgba(76,175,125,0.2)}
+.trim-arq-toggle{color:rgba(212,168,74,0.4);font-size:18px;flex-shrink:0;transition:transform var(--t-base)}
+.trim-arq-toggle.open{transform:rotate(180deg)}
+
+/* ═══ CORPO EXPANDIDO ═══ */
+.trim-arq-body{display:none;border-top:1px solid rgba(212,168,74,0.1)}
+.trim-arq-body.open{display:block;animation:fadeIn .25s ease}
+
+/* ═══ RESUMO DO TRIMESTRE ═══ */
+.trim-resumo{padding:20px 20px 16px;border-bottom:1px solid rgba(255,255,255,0.05)}
+.trim-resumo-title{font-family:var(--font-display);font-size:9px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:10px}
+.trim-resumo-text{font-family:var(--font-serif);font-size:15px;line-height:1.75;color:var(--text-light);font-style:italic}
+.trim-resumo-verse{margin-top:12px;padding:12px 16px;background:rgba(212,168,74,0.05);border-left:3px solid rgba(212,168,74,0.3);border-radius:0 var(--r-sm) var(--r-sm) 0}
+.trim-resumo-verse-text{font-family:var(--font-serif);font-size:14px;font-style:italic;color:rgba(255,255,255,0.6);line-height:1.6}
+.trim-resumo-verse-ref{font-family:var(--font-display);font-size:9px;letter-spacing:1px;color:rgba(212,168,74,0.5);margin-top:4px}
+
+/* ═══ LINHA DO TEMPO COMPLETA ═══ */
+.trim-timeline{padding:16px 20px;border-bottom:1px solid rgba(255,255,255,0.05)}
+.trim-tl-title{font-family:var(--font-display);font-size:9px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between}
+.trim-tl-badge{background:rgba(76,175,125,0.12);border:1px solid rgba(76,175,125,0.3);color:var(--green);border-radius:20px;padding:3px 10px;font-size:8px;letter-spacing:1px}
+.trim-tl-bar-wrap{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.trim-tl-bar-track{flex:1;height:7px;background:rgba(255,255,255,0.06);border-radius:4px;overflow:hidden}
+.trim-tl-bar-fill{height:100%;background:linear-gradient(90deg,var(--gold-dark),var(--gold));border-radius:4px;width:100%}
+.trim-tl-bar-lbl{font-family:var(--font-display);font-size:10px;color:var(--gold);white-space:nowrap}
+.trim-tl-list{display:flex;flex-direction:column;gap:8px}
+.tl-item{display:flex;align-items:flex-start;gap:12px}
+.tl-item-dot{width:28px;height:28px;border-radius:50%;background:rgba(212,168,74,0.12);border:2px solid rgba(212,168,74,0.4);display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:8px;color:var(--gold);font-weight:700;flex-shrink:0;margin-top:2px}
+.tl-item-dot.done{background:rgba(76,175,125,0.15);border-color:rgba(76,175,125,0.5);color:var(--green);font-size:12px}
+.tl-item-info{flex:1}
+.tl-item-num{font-family:var(--font-display);font-size:8px;letter-spacing:2px;color:rgba(212,168,74,0.5);margin-bottom:2px}
+.tl-item-name{font-size:13px;color:var(--text-mid);line-height:1.35;font-weight:600}
+.tl-item-ref{font-size:11px;color:var(--text-light);font-style:italic}
+.tl-item-date{font-family:var(--font-display);font-size:9px;color:rgba(255,255,255,0.25);margin-left:auto;flex-shrink:0;padding-top:3px}
+
+/* ═══ GRADE DE LIÇÕES (CARDS CLICÁVEIS) ═══ */
+.trim-licoes{padding:16px 20px 20px}
+.trim-licoes-title{font-family:var(--font-display);font-size:9px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+.licoes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.lic-card{background:rgba(255,255,255,0.03);border:1px solid var(--border);border-radius:var(--r-md);padding:14px 12px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:4px;transition:all var(--t-base);position:relative}
+.lic-card:hover{background:rgba(212,168,74,0.06);border-color:rgba(212,168,74,0.35);transform:translateY(-2px);box-shadow:0 6px 20px var(--shadow-gold)}
+.lic-num{font-family:var(--font-display);font-size:9px;letter-spacing:2px;color:var(--gold);display:flex;align-items:center;gap:6px}
+.lic-check{font-size:10px;color:var(--green)}
+.lic-title{font-size:12px;font-weight:600;color:var(--text-mid);line-height:1.35;margin-top:2px}
+.lic-ref{font-size:10px;color:var(--text-light);font-style:italic;margin-top:2px}
+.lic-date{font-family:var(--font-display);font-size:8px;color:rgba(255,255,255,0.2);margin-top:4px}
+.lic-arrow{position:absolute;bottom:10px;right:10px;color:rgba(212,168,74,0.3);font-size:12px;transition:color var(--t-fast)}
+.lic-card:hover .lic-arrow{color:var(--gold)}
+
+/* ═══ BANNER LIÇÃO ATUAL ═══ */
+.banner-atual{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#0a1828,#07122a);border-bottom:1px solid rgba(212,168,74,0.25);padding:10px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.ba-pill{background:rgba(76,175,125,0.15);border:1px solid rgba(76,175,125,0.4);color:#4caf7d;border-radius:20px;padding:3px 10px;font-family:var(--font-display);font-size:8px;letter-spacing:2px;white-space:nowrap;flex-shrink:0}
+.ba-info{flex:1;min-width:0}
+.ba-label{font-family:var(--font-display);font-size:8px;letter-spacing:2px;color:rgba(212,168,74,0.5);text-transform:uppercase}
+.ba-title{font-size:12px;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.3}
+.ba-ref{font-size:11px;color:rgba(255,255,255,0.35);font-style:italic}
+.ba-btn{background:linear-gradient(135deg,var(--gold-dark),var(--gold));color:#07122a;border-radius:var(--r-sm);padding:8px 14px;font-family:var(--font-display);font-size:9px;letter-spacing:1px;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:opacity var(--t-fast)}
+.ba-btn:hover{opacity:.85}
+
+/* ═══ AVISO TRIMESTRES FUTUROS ═══ */
+.arq-vazio{background:var(--bg-card);border:1px dashed rgba(255,255,255,0.1);border-radius:var(--r-lg);padding:32px 20px;text-align:center;color:rgba(255,255,255,0.28);margin-bottom:14px}
+.arq-vazio-icon{font-size:32px;margin-bottom:10px;opacity:.4}
+.arq-vazio-text{font-family:var(--font-display);font-size:9px;letter-spacing:3px;text-transform:uppercase}
+.arq-vazio-sub{font-size:13px;margin-top:6px;font-family:var(--font-serif);font-style:italic}
+
+/* ═══ RODAPÉ ═══ */
+footer{background:linear-gradient(180deg,#07122a,#030810);border-top:1px solid rgba(212,168,74,0.1);padding:24px 20px;text-align:center;margin-top:20px}
+.footer-logo{font-family:var(--font-display);font-size:9px;letter-spacing:5px;color:rgba(212,168,74,0.45);margin-bottom:6px}
+.footer-dev{font-size:11px;color:rgba(255,255,255,0.28)}
+
+/* ═══ ANIMAÇÕES ═══ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
+/* ═══ RESPONSIVO ═══ */
+@media(max-width:600px){
+  main{padding:24px 12px 70px}
+  .trim-arq-banner{gap:12px}
+  .licoes-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:6px}
+  .trim-tl-bar-wrap{gap:8px}
+  .trim-resumo,.trim-timeline,.trim-licoes{padding:14px}
+  .tl-item-date{display:none}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<button id="btnTheme" onclick="toggleTheme()" aria-label="Alternar tema" title="Modo claro/escuro">☀️</button>
+
+<!-- BANNER LIÇÃO ATUAL — sempre visível -->
+<div class="banner-atual" role="complementary" aria-label="Lição atual do trimestre vigente">
+  <span class="ba-pill">▶ Ao vivo</span>
+  <div class="ba-info">
+    <div class="ba-label">3º Trimestre 2026 · Lição 01</div>
+    <div class="ba-title">O Chamado para os Gentios</div>
+    <div class="ba-ref">Atos 13.1–12 · Dom, 5 Jul</div>
+  </div>
+  <a class="ba-btn" href="2026-t3/licao-01.html">Ir para aula →</a>
+</div>
+
+<!-- HEADER -->
+<header class="arq-header">
+  <a class="arq-back" href="index.html">← Início</a>
+  <div class="arq-logo">
+    <img src="logo-adge.jpg" alt="Logo ADGE"
+         onerror="this.style.display='none';document.getElementById('logoPh').style.display='flex'">
+    <span class="arq-logo-ph" id="logoPh" style="display:none">AD</span>
+  </div>
+  <p class="arq-tag">EBD ADGE · Escola Bíblica de Discípulos</p>
+  <h1 class="arq-title">Arquivo de Trimestres</h1>
+  <p class="arq-sub">Lições passadas — acesse, revise e aprofunde seu estudo</p>
+</header>
+
+<main>
+
+  <!-- ══ 2º TRIMESTRE 2026 ══ -->
+  <div class="sep"><span class="sep-text">✦ Trimestres Concluídos</span></div>
+
+  <article class="trim-arq" id="trim-2026-t2">
+
+    <!-- Banner / toggle -->
+    <div class="trim-arq-banner" onclick="toggleTrim('2026-t2')" role="button" tabindex="0"
+         onkeydown="if(event.key==='Enter'||event.key===' ')toggleTrim('2026-t2')"
+         aria-expanded="false" aria-controls="body-2026-t2">
+      <div class="trim-arq-badge">
+        <div class="trim-arq-badge-num">2º Trim.</div>
+        <div class="trim-arq-badge-year">2026</div>
+      </div>
+      <div class="trim-arq-info">
+        <div class="trim-arq-periodo">Abril — Junho 2026</div>
+        <div class="trim-arq-nome">Homens dos quais o Mundo não Era Digno</div>
+        <div class="trim-arq-sub">O Legado de Abraão, Isaque e Jacó</div>
+        <div class="trim-arq-stats">
+          <span class="trim-arq-stat">13 lições</span>
+          <span class="trim-arq-stat">Gên. 12–33 · Hb 11</span>
+          <span class="trim-arq-stat verde">✓ Concluído</span>
+        </div>
+      </div>
+      <div class="trim-arq-toggle" id="toggle-2026-t2">▾</div>
+    </div>
+
+    <!-- Corpo -->
+    <div class="trim-arq-body" id="body-2026-t2">
+
+      <!-- Resumo -->
+      <div class="trim-resumo">
+        <div class="trim-resumo-title">📖 Resumo do Trimestre</div>
+        <p class="trim-resumo-text">
+          Neste trimestre percorremos a trajetória de três patriarcas que moldaram a história da fé bíblica.
+          Abraão respondeu ao chamado de Deus, deixando tudo para seguir uma promessa. Isaque herdou essa promessa
+          e a sustentou com fidelidade. Jacó, mesmo cheio de imperfeições, foi transformado pelo toque de Deus e
+          tornou-se pai das doze tribos de Israel.
+        </p>
+        <div class="trim-resumo-verse">
+          <div class="trim-resumo-verse-text">"Todos estes morreram na fé… eram estrangeiros e peregrinos sobre a terra."</div>
+          <div class="trim-resumo-verse-ref">Hebreus 11.13 · Versículo-tema do Trimestre</div>
+        </div>
+      </div>
+
+      <!-- Linha do tempo completa -->
+      <div class="trim-timeline">
+        <div class="trim-tl-title">
+          📍 Linha do Tempo
+          <span class="trim-tl-badge">✓ 13 / 13 concluídas</span>
+        </div>
+        <div class="trim-tl-bar-wrap">
+          <div class="trim-tl-bar-track"><div class="trim-tl-bar-fill"></div></div>
+          <span class="trim-tl-bar-lbl">100%</span>
+        </div>
+        <div class="trim-tl-list" id="tl-2026-t2"></div>
+      </div>
+
+      <!-- Grade de lições -->
+      <div class="trim-licoes">
+        <div class="trim-licoes-title">📚 Lições — Clique para ler</div>
+        <div class="licoes-grid" id="grid-2026-t2"></div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ══ TRIMESTRES ANTERIORES AO T2 (placeholder) ══ -->
+  <div class="sep"><span class="sep-text">✦ Trimestres Anteriores</span></div>
+  <div class="arq-vazio">
+    <div class="arq-vazio-icon">🗂</div>
+    <div class="arq-vazio-text">1º Trimestre 2026</div>
+    <div class="arq-vazio-sub">Conteúdo será adicionado em breve</div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-logo">✦ Assembleia de Deus Geração Eleita ✦</div>
+  <div class="footer-dev">Desenvolvido pelo Sup. Jarlam Antonio · EBD ADGE 2026</div>
+</footer>
+
+<script>
+/* ═══ TEMA ═══ */
+function toggleTheme(){
+  const isLight = document.body.classList.toggle('light');
+  document.getElementById('btnTheme').textContent = isLight ? '🌙' : '☀️';
+  try { localStorage.setItem('ebd_theme', isLight ? 'light' : 'dark'); } catch(e){}
+}
+try {
+  if(localStorage.getItem('ebd_theme') === 'light'){
+    document.body.classList.add('light');
+    document.getElementById('btnTheme').textContent = '🌙';
+  }
+} catch(e){}
+
+/* ═══ DADOS — 2º TRIMESTRE 2026 ═══ */
+const T2_2026 = [
+  {n:'01', t:'Abraão: Seu Chamado e Sua Jornada de Fé',    r:'Gên. 12.1–9',   w:'5 Abr 2026',  url:'2026-t2/licao-01.html'},
+  {n:'02', t:'A Fé de Abraão nas Promessas de Deus',       r:'Gên. 12.10–20', w:'12 Abr 2026', url:'2026-t2/licao-02.html'},
+  {n:'03', t:'A Impaciência na Espera da Promessa',        r:'Gênesis 13',    w:'19 Abr 2026', url:'2026-t2/licao-03.html'},
+  {n:'04', t:'A Confirmação de Uma Promessa',              r:'Gênesis 15',    w:'26 Abr 2026', url:'2026-t2/licao-04.html'},
+  {n:'05', t:'O Juízo contra Sodoma e Gomorra',            r:'Gênesis 19',    w:'3 Mai 2026',  url:'2026-t2/licao-05.html'},
+  {n:'06', t:'O Nascimento de Isaque',                     r:'Gên. 21.1–7',   w:'10 Mai 2026', url:'2026-t2/licao-06.html'},
+  {n:'07', t:'Uma Prova de Fé: A Entrega de Isaque',       r:'Gên. 22.1–19',  w:'17 Mai 2026', url:'2026-t2/licao-07.html'},
+  {n:'08', t:'Isaque: Herdeiro da Promessa',               r:'Gênesis 24',    w:'24 Mai 2026', url:'2026-t2/licao-08.html'},
+  {n:'09', t:'Jacó e Esaú: Irmãos em Conflito',           r:'Gên. 25–27',    w:'31 Mai 2026', url:'2026-t2/licao-09.html'},
+  {n:'10', t:'A Experiência Transformadora de Jacó',       r:'Gên. 28–32',    w:'7 Jun 2026',  url:'2026-t2/licao-10.html'},
+  {n:'11', t:'Jacó: De Enganador a Homem de Honra',        r:'Gênesis 32–33', w:'14 Jun 2026', url:'2026-t2/licao-11.html'},
+  {n:'12', t:'A Reconciliação de Jacó com Esaú',           r:'Gênesis 33',    w:'21 Jun 2026', url:'2026-t2/licao-12.html'},
+  {n:'13', t:'O Legado de Fé de Abraão, Isaque e Jacó',   r:'Hebreus 11',    w:'28 Jun 2026', url:'2026-t2/licao-13.html'},
+];
+
+/* ═══ MONTAR LINHA DO TEMPO ═══ */
+(function(){
+  const list = document.getElementById('tl-2026-t2');
+  T2_2026.forEach(l => {
+    const item = document.createElement('div');
+    item.className = 'tl-item';
+    item.innerHTML = `
+      <div class="tl-item-dot done">✓</div>
+      <div class="tl-item-info">
+        <div class="tl-item-num">LIÇÃO ${l.n}</div>
+        <div class="tl-item-name">${l.t}</div>
+        <div class="tl-item-ref">${l.r}</div>
+      </div>
+      <div class="tl-item-date">${l.w}</div>
+    `;
+    list.appendChild(item);
+  });
+})();
+
+/* ═══ MONTAR GRADE DE LIÇÕES ═══ */
+(function(){
+  const grid = document.getElementById('grid-2026-t2');
+  T2_2026.forEach(l => {
+    const a = document.createElement('a');
+    a.className = 'lic-card';
+    a.href = l.url;
+    a.setAttribute('aria-label', `Lição ${l.n} — ${l.t}`);
+    a.innerHTML = `
+      <div class="lic-num">Lição ${l.n} <span class="lic-check">✓</span></div>
+      <div class="lic-title">${l.t}</div>
+      <div class="lic-ref">${l.r}</div>
+      <div class="lic-date">${l.w}</div>
+      <span class="lic-arrow">→</span>
+    `;
+    grid.appendChild(a);
+  });
+})();
+
+/* ═══ TOGGLE TRIMESTRE ═══ */
+function toggleTrim(id){
+  const body    = document.getElementById('body-' + id);
+  const toggle  = document.getElementById('toggle-' + id);
+  const banner  = body.previousElementSibling;
+  const isOpen  = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  toggle.classList.toggle('open', !isOpen);
+  banner.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+
+</body>
+</html>

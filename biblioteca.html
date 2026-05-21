@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Biblioteca · EBD ADGE</title>
+<meta name="description" content="Todos os trimestres da Escola Bíblica de Discípulos ADGE — acesse, revise e aprofunde seu estudo.">
+<meta name="theme-color" content="#07122a">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+
+:root{
+  --gold:#d4a84a;--gold-light:#ecc46a;--gold-dark:#a07828;
+  --gold-glow:rgba(212,168,74,0.18);
+  --navy:#07122a;--navy-mid:#0d1f3c;--navy-light:#1a3464;--navy-deep:#030810;
+  --text:#ffffff;--text-mid:#d0dff5;--text-light:#a0bcdc;
+  --bg:#07122a;--bg-card:#0d1f3c;--bg-card-alt:#0a1828;
+  --border:#1a3060;--border-gold:rgba(212,168,74,0.25);
+  --green:#4caf7d;--green-dim:rgba(76,175,125,0.15);
+  --shadow:rgba(0,0,0,0.45);--shadow-gold:rgba(212,168,74,0.2);
+  --font-body:'Source Sans 3',sans-serif;
+  --font-display:'Cinzel',serif;
+  --font-serif:'Cormorant Garamond',serif;
+  --r-sm:8px;--r-md:12px;--r-lg:16px;--r-xl:20px;
+  --t-fast:.15s ease;--t-base:.22s ease;--t-slow:.4s ease;
+}
+body.light{
+  --text:#0a1628;--text-mid:#1a3050;--text-light:#3a5870;
+  --bg:#f0ece2;--bg-card:#ffffff;--bg-card-alt:#f5f2eb;
+  --border:#d0c8b0;--border-gold:rgba(160,120,40,0.3);
+  --shadow:rgba(10,22,40,0.10);--shadow-gold:rgba(160,120,40,0.15);
+}
+body{font-family:var(--font-body);background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;transition:background var(--t-slow),color var(--t-slow)}
+
+/* ═══ TEMA ═══ */
+#btnTheme{position:fixed;top:14px;right:14px;width:40px;height:40px;border-radius:50%;background:#07122a;border:1px solid var(--border-gold);color:var(--gold);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:999;box-shadow:0 2px 12px var(--shadow);transition:background var(--t-base),transform var(--t-fast)}
+#btnTheme:hover{background:rgba(212,168,74,0.15);transform:scale(1.08)}
+
+/* ═══ BANNER LIÇÃO ATUAL ═══ */
+.banner-atual{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,#0a1828,#07122a);border-bottom:1px solid rgba(212,168,74,0.25);padding:10px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.ba-pill{background:rgba(76,175,125,0.15);border:1px solid rgba(76,175,125,0.4);color:#4caf7d;border-radius:20px;padding:3px 10px;font-family:var(--font-display);font-size:8px;letter-spacing:2px;white-space:nowrap;flex-shrink:0;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+.ba-info{flex:1;min-width:0}
+.ba-label{font-family:var(--font-display);font-size:8px;letter-spacing:2px;color:rgba(212,168,74,0.5);text-transform:uppercase}
+.ba-title{font-size:13px;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.3}
+.ba-ref{font-size:11px;color:rgba(255,255,255,0.35);font-style:italic}
+.ba-btn{background:linear-gradient(135deg,var(--gold-dark),var(--gold));color:#07122a;border-radius:var(--r-sm);padding:8px 14px;font-family:var(--font-display);font-size:9px;letter-spacing:1px;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0;transition:opacity var(--t-fast)}
+.ba-btn:hover{opacity:.85}
+
+/* ═══ HEADER ═══ */
+.bib-header{background:linear-gradient(160deg,#020810 0%,#07122a 55%,#0c1e3c 100%);padding:40px 20px 32px;text-align:center;border-bottom:1px solid rgba(212,168,74,0.12);position:relative;overflow:hidden}
+.bib-header::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% -10%,rgba(212,168,74,0.08) 0%,transparent 60%);pointer-events:none}
+.bib-back{position:absolute;top:16px;left:16px;background:rgba(255,255,255,0.05);border:1px solid var(--border-gold);color:var(--gold);border-radius:var(--r-sm);padding:7px 14px;font-family:var(--font-display);font-size:9px;letter-spacing:2px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:background var(--t-base)}
+.bib-back:hover{background:rgba(212,168,74,0.1)}
+.bib-logo{width:64px;height:64px;border-radius:50%;border:2px solid rgba(212,168,74,0.4);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;overflow:hidden;background:#07122a;box-shadow:0 0 32px rgba(212,168,74,0.15)}
+.bib-logo img{width:100%;height:100%;object-fit:cover}
+.bib-logo-ph{font-family:var(--font-display);font-size:14px;font-weight:700;color:var(--gold);letter-spacing:2px}
+.bib-tag{font-family:var(--font-display);font-size:9px;letter-spacing:4px;color:rgba(212,168,74,0.5);text-transform:uppercase;margin-bottom:8px}
+.bib-title{font-family:var(--font-display);font-size:clamp(20px,5vw,30px);font-weight:700;color:#fff;margin-bottom:6px}
+.bib-sub{font-family:var(--font-serif);font-size:14px;font-style:italic;color:rgba(255,255,255,0.38)}
+
+/* ═══ MAIN ═══ */
+main{max-width:860px;margin:0 auto;padding:32px 16px 80px}
+
+/* ═══ SEPARADOR ═══ */
+.sep{display:flex;align-items:center;gap:14px;margin:36px 0 20px}
+.sep::before,.sep::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+.sep-text{font-family:var(--font-display);font-size:10px;letter-spacing:4px;color:var(--gold);white-space:nowrap;text-transform:uppercase}
+
+/* ═══ CARROSSEL ═══ */
+.carousel-wrap{position:relative;margin:0 -4px}
+.carousel-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:8px 4px 20px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.carousel-track::-webkit-scrollbar{display:none}
+
+/* ═══ CARD DO LIVRO ═══ */
+.book-card{flex:0 0 160px;scroll-snap-align:start;display:flex;flex-direction:column;cursor:pointer;transition:transform var(--t-base)}
+.book-card:hover{transform:translateY(-4px)}
+.book-card.active .book-cover{box-shadow:0 0 0 2px var(--gold),0 16px 40px rgba(212,168,74,0.3)}
+.book-cover{width:160px;height:220px;border-radius:var(--r-md);overflow:hidden;position:relative;box-shadow:0 8px 28px rgba(0,0,0,0.5);transition:box-shadow var(--t-base)}
+.book-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.book-cover-ph{width:100%;height:100%;background:linear-gradient(160deg,#060e1e,#0a1828);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:16px;text-align:center}
+.book-cover-ph-icon{font-size:28px;opacity:.4}
+.book-cover-ph-txt{font-family:var(--font-display);font-size:9px;letter-spacing:1px;color:rgba(212,168,74,0.5);line-height:1.5}
+.book-cover-badge{position:absolute;top:8px;right:8px;background:rgba(76,175,125,0.9);color:#fff;border-radius:20px;padding:2px 8px;font-family:var(--font-display);font-size:7px;letter-spacing:1px}
+.book-cover-badge.em-breve{background:rgba(160,120,40,0.7)}
+.book-cover-badge.atual{background:rgba(212,168,74,0.95);color:#07122a}
+.book-info{padding:10px 4px 0}
+.book-trim{font-family:var(--font-display);font-size:8px;letter-spacing:2px;color:rgba(212,168,74,0.55);margin-bottom:3px}
+.book-title{font-size:11px;font-weight:600;color:var(--text-mid);line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* ═══ PAINEL DE DETALHES ═══ */
+.detail-panel{background:var(--bg-card);border:1px solid var(--border-gold);border-radius:var(--r-lg);padding:0;overflow:hidden;margin-top:24px;animation:fadeUp .3s ease;display:none}
+.detail-panel.open{display:block}
+.detail-header{padding:20px;border-bottom:1px solid rgba(212,168,74,0.1);display:flex;align-items:center;gap:16px}
+.detail-cover{width:56px;height:78px;border-radius:var(--r-sm);overflow:hidden;flex-shrink:0;box-shadow:0 4px 16px rgba(0,0,0,0.4)}
+.detail-cover img{width:100%;height:100%;object-fit:cover}
+.detail-cover-ph{width:100%;height:100%;background:linear-gradient(135deg,#060e1e,#0a1828);display:flex;align-items:center;justify-content:center;font-size:20px;opacity:.5}
+.detail-meta{flex:1;min-width:0}
+.detail-trim-tag{font-family:var(--font-display);font-size:8px;letter-spacing:3px;color:rgba(212,168,74,0.5);text-transform:uppercase;margin-bottom:4px}
+.detail-title{font-family:var(--font-display);font-size:clamp(13px,3vw,17px);color:#fff;font-weight:600;line-height:1.3;margin-bottom:4px}
+.detail-sub{font-family:var(--font-serif);font-size:13px;font-style:italic;color:rgba(255,255,255,0.38)}
+.detail-pills{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.detail-pill{font-family:var(--font-display);font-size:8px;letter-spacing:1px;color:rgba(212,168,74,0.6);background:rgba(212,168,74,0.07);border:1px solid rgba(212,168,74,0.15);border-radius:6px;padding:2px 8px}
+.detail-pill.verde{color:var(--green);background:rgba(76,175,125,0.07);border-color:rgba(76,175,125,0.2)}
+.detail-pill.atual{color:#07122a;background:var(--gold);border-color:var(--gold)}
+.detail-actions{padding:16px 20px;display:flex;gap:10px;flex-wrap:wrap}
+.detail-btn{flex:1;min-width:130px;padding:12px 16px;border-radius:var(--r-md);font-family:var(--font-display);font-size:10px;letter-spacing:1.5px;font-weight:700;text-decoration:none;text-align:center;cursor:pointer;border:none;transition:all var(--t-base);display:flex;align-items:center;justify-content:center;gap:8px}
+.detail-btn-primary{background:linear-gradient(135deg,var(--gold-dark),var(--gold));color:#07122a}
+.detail-btn-primary:hover{opacity:.88;transform:translateY(-1px)}
+.detail-btn-share{background:rgba(37,211,102,0.12);border:1px solid rgba(37,211,102,0.35);color:#25d366}
+.detail-btn-share:hover{background:rgba(37,211,102,0.2);transform:translateY(-1px)}
+.detail-btn-disabled{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.25);cursor:default;pointer-events:none}
+.detail-close{padding:12px 20px;border-top:1px solid rgba(255,255,255,0.05);text-align:center}
+.detail-close-btn{background:none;border:none;color:rgba(255,255,255,0.25);font-family:var(--font-display);font-size:9px;letter-spacing:2px;cursor:pointer;padding:4px 12px;transition:color var(--t-fast)}
+.detail-close-btn:hover{color:rgba(255,255,255,0.5)}
+
+/* ═══ PLACEHOLDER EM BREVE ═══ */
+.bib-vazio{background:var(--bg-card);border:1px dashed rgba(255,255,255,0.08);border-radius:var(--r-lg);padding:28px 20px;text-align:center;color:rgba(255,255,255,0.25);margin-top:12px}
+.bib-vazio-icon{font-size:28px;margin-bottom:8px;opacity:.35}
+.bib-vazio-text{font-family:var(--font-display);font-size:9px;letter-spacing:3px;text-transform:uppercase}
+.bib-vazio-sub{font-size:12px;margin-top:5px;font-family:var(--font-serif);font-style:italic}
+
+/* ═══ RODAPÉ ═══ */
+footer{background:linear-gradient(180deg,#07122a,#030810);border-top:1px solid rgba(212,168,74,0.1);padding:24px 20px;text-align:center;margin-top:20px}
+.footer-logo{font-family:var(--font-display);font-size:9px;letter-spacing:5px;color:rgba(212,168,74,0.45);margin-bottom:6px}
+.footer-dev{font-size:11px;color:rgba(255,255,255,0.28)}
+
+/* ═══ ANIMAÇÕES ═══ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+
+/* ═══ RESPONSIVO ═══ */
+@media(max-width:600px){
+  main{padding:24px 12px 70px}
+  .book-card{flex:0 0 140px}
+  .book-cover{width:140px;height:194px}
+  .detail-actions{flex-direction:column}
+  .detail-btn{min-width:unset;width:100%}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<button id="btnTheme" onclick="toggleTheme()" aria-label="Alternar tema" title="Modo claro/escuro">☀️</button>
+
+<!-- BANNER LIÇÃO ATUAL -->
+<div class="banner-atual" role="complementary" aria-label="Lição atual do trimestre vigente">
+  <span class="ba-pill">▶ Ao vivo</span>
+  <div class="ba-info">
+    <div class="ba-label">3º Trimestre 2026 · Lição 01</div>
+    <div class="ba-title">O Chamado para os Gentios</div>
+    <div class="ba-ref">Atos 13.1–12 · Dom, 5 Jul</div>
+  </div>
+  <a class="ba-btn" href="2026-t3/licao-01.html">Ir para aula →</a>
+</div>
+
+<!-- HEADER -->
+<header class="bib-header">
+  <a class="bib-back" href="index.html">← Início</a>
+  <div class="bib-logo">
+    <img src="logo-adge.jpg" alt="Logo ADGE"
+         onerror="this.style.display='none';document.getElementById('logoPh').style.display='flex'">
+    <span class="bib-logo-ph" id="logoPh" style="display:none">AD</span>
+  </div>
+  <p class="bib-tag">EBD ADGE · Escola Bíblica de Discípulos</p>
+  <h1 class="bib-title">Biblioteca</h1>
+  <p class="bib-sub">Todos os trimestres — clique na capa para explorar</p>
+</header>
+
+<main>
+
+  <div class="sep"><span class="sep-text">✦ Trimestres</span></div>
+
+  <!-- CARROSSEL -->
+  <div class="carousel-wrap">
+    <div class="carousel-track" id="carouselTrack" role="list"></div>
+  </div>
+
+  <!-- PAINEL DE DETALHES (abre ao clicar na capa) -->
+  <div class="detail-panel" id="detailPanel" role="region" aria-label="Detalhes do trimestre selecionado">
+    <div class="detail-header">
+      <div class="detail-cover" id="detailCover"></div>
+      <div class="detail-meta">
+        <div class="detail-trim-tag" id="detailTag"></div>
+        <div class="detail-title" id="detailTitle"></div>
+        <div class="detail-sub" id="detailSub"></div>
+        <div class="detail-pills" id="detailPills"></div>
+      </div>
+    </div>
+    <div class="detail-actions" id="detailActions"></div>
+    <div class="detail-close">
+      <button class="detail-close-btn" onclick="fecharDetalhe()">✕ Fechar</button>
+    </div>
+  </div>
+
+  <!-- PLACEHOLDER FUTUROS -->
+  <div class="bib-vazio" id="bibVazio" style="display:none">
+    <div class="bib-vazio-icon">📚</div>
+    <div class="bib-vazio-text">Mais trimestres em breve</div>
+    <div class="bib-vazio-sub">Novos conteúdos serão adicionados ao longo do ano</div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-logo">✦ Assembleia de Deus Geração Eleita ✦</div>
+  <div class="footer-dev">Desenvolvido pelo Sup. Jarlam Antonio · EBD ADGE 2026</div>
+</footer>
+
+<script>
+/* ═══ TEMA ═══ */
+function toggleTheme(){
+  const isLight = document.body.classList.toggle('light');
+  document.getElementById('btnTheme').textContent = isLight ? '🌙' : '☀️';
+  try { localStorage.setItem('ebd_theme', isLight ? 'light' : 'dark'); } catch(e){}
+}
+try {
+  if(localStorage.getItem('ebd_theme') === 'light'){
+    document.body.classList.add('light');
+    document.getElementById('btnTheme').textContent = '🌙';
+  }
+} catch(e){}
+
+/* ═══ BASE GITHUB RAW ═══ */
+const GH = 'https://raw.githubusercontent.com/abgferro/Portal-EBD-GE-/main';
+
+/* ═══ DADOS DOS TRIMESTRES ═══ */
+const TRIMESTRES = [
+  {
+    id: '2026-t3',
+    trim: '3º Trimestre · 2026',
+    periodo: 'Julho — Setembro 2026',
+    titulo: 'A Igreja dos Gentios',
+    sub: 'Da Chamada Missionária à Consolidação do Evangelho entre os Povos',
+    capa: GH + '/revista/2026-t3.jpg',
+    status: 'atual',          // 'atual' | 'concluido' | 'em-breve'
+    pills: ['13 lições','Jul — Set 2026'],
+    pillAtual: 'Trimestre Atual',
+    arquivo: '2026-t3/licao-01.html',
+    waLink: 'https://portal-ebd-ge.vercel.app/2026-t3/licao-01.html',
+    waMsg: '📖 *Lições Bíblicas — 3º Trimestre 2026*\n\n*A Igreja dos Gentios*\n_Da Chamada Missionária à Consolidação do Evangelho entre os Povos_\n\nAcesse as lições em: https://portal-ebd-ge.vercel.app/2026-t3/licao-01.html\n\n_EBD · Assembleia de Deus Geração Eleita_',
+  },
+  {
+    id: '2026-t2',
+    trim: '2º Trimestre · 2026',
+    periodo: 'Abril — Junho 2026',
+    titulo: 'Homens dos quais o Mundo não Era Digno',
+    sub: 'O Legado de Abraão, Isaque e Jacó',
+    capa: GH + '/revista/2026-t2.jpg',
+    status: 'concluido',
+    pills: ['13 lições','Abr — Jun 2026'],
+    pillAtual: '✓ Concluído',
+    arquivo: 'arquivo.html',
+    waLink: 'https://portal-ebd-ge.vercel.app/arquivo.html',
+    waMsg: '📖 *Lições Bíblicas — 2º Trimestre 2026*\n\n*Homens dos quais o Mundo não Era Digno*\n_O Legado de Abraão, Isaque e Jacó_\n\nAcesse as lições em: https://portal-ebd-ge.vercel.app/arquivo.html\n\n_EBD · Assembleia de Deus Geração Eleita_',
+  },
+  {
+    id: '2026-t1',
+    trim: '1º Trimestre · 2026',
+    periodo: 'Janeiro — Março 2026',
+    titulo: 'Em breve',
+    sub: '',
+    capa: GH + '/revista/2026-t1.jpg',
+    status: 'em-breve',
+    pills: ['13 lições','Jan — Mar 2026'],
+    pillAtual: 'Em breve',
+    arquivo: null,
+    waLink: null,
+    waMsg: null,
+  },
+];
+
+/* ═══ CARROSSEL ═══ */
+let cardAtivo = null;
+
+function montarCarrossel(){
+  const track = document.getElementById('carouselTrack');
+  TRIMESTRES.forEach(t => {
+    const card = document.createElement('div');
+    card.className = 'book-card';
+    card.setAttribute('role','listitem');
+    card.setAttribute('tabindex','0');
+    card.setAttribute('aria-label', `${t.trim} — ${t.titulo}`);
+    card.dataset.id = t.id;
+
+    const badgeLabel = t.status === 'atual' ? 'Atual' : t.status === 'concluido' ? '✓ Concluído' : 'Em breve';
+    const badgeClass = t.status === 'atual' ? 'atual' : t.status === 'em-breve' ? 'em-breve' : '';
+
+    card.innerHTML = `
+      <div class="book-cover">
+        <img src="${t.capa}" alt="Capa ${t.trim}"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="book-cover-ph" style="display:none">
+          <div class="book-cover-ph-icon">📖</div>
+          <div class="book-cover-ph-txt">${t.trim}</div>
+        </div>
+        <span class="book-cover-badge ${badgeClass}">${badgeLabel}</span>
+      </div>
+      <div class="book-info">
+        <div class="book-trim">${t.trim}</div>
+        <div class="book-title">${t.titulo}</div>
+      </div>
+    `;
+
+    card.addEventListener('click', () => abrirDetalhe(t, card));
+    card.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' ') abrirDetalhe(t, card); });
+    track.appendChild(card);
+  });
+}
+
+function abrirDetalhe(t, cardEl){
+  // Toggle: se clicar no mesmo, fecha
+  if(cardAtivo && cardAtivo.dataset.id === t.id){
+    fecharDetalhe();
+    return;
+  }
+
+  // Marca card ativo
+  document.querySelectorAll('.book-card').forEach(c => c.classList.remove('active'));
+  cardEl.classList.add('active');
+  cardAtivo = cardEl;
+
+  // Preenche painel
+  document.getElementById('detailTag').textContent = t.periodo;
+  document.getElementById('detailTitle').textContent = t.titulo;
+  document.getElementById('detailSub').textContent = t.sub;
+
+  // Capa pequena
+  const coverEl = document.getElementById('detailCover');
+  coverEl.innerHTML = `
+    <img src="${t.capa}" alt="Capa ${t.trim}"
+         style="width:100%;height:100%;object-fit:cover"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="detail-cover-ph" style="display:none">📖</div>
+  `;
+
+  // Pills
+  const pillsEl = document.getElementById('detailPills');
+  pillsEl.innerHTML = t.pills.map(p => `<span class="detail-pill">${p}</span>`).join('') +
+    `<span class="detail-pill ${t.status==='atual'?'atual':t.status==='concluido'?'verde':''}">${t.pillAtual}</span>`;
+
+  // Botões
+  const actionsEl = document.getElementById('detailActions');
+  if(t.status === 'em-breve'){
+    actionsEl.innerHTML = `
+      <span class="detail-btn detail-btn-disabled">🔒 Conteúdo em preparação</span>
+    `;
+  } else {
+    const waUrl = 'https://wa.me/?text=' + encodeURIComponent(t.waMsg);
+    actionsEl.innerHTML = `
+      <a class="detail-btn detail-btn-primary" href="${t.arquivo}">
+        📚 Ver Arquivo →
+      </a>
+      <a class="detail-btn detail-btn-share" href="${waUrl}" target="_blank" rel="noopener noreferrer">
+        📤 Compartilhar no WhatsApp
+      </a>
+    `;
+  }
+
+  // Abre painel
+  const panel = document.getElementById('detailPanel');
+  panel.classList.add('open');
+
+  // Scroll suave até o painel
+  setTimeout(() => panel.scrollIntoView({behavior:'smooth', block:'nearest'}), 50);
+}
+
+function fecharDetalhe(){
+  document.getElementById('detailPanel').classList.remove('open');
+  document.querySelectorAll('.book-card').forEach(c => c.classList.remove('active'));
+  cardAtivo = null;
+}
+
+montarCarrossel();
+
+// Mostra placeholder se algum "em-breve" existe
+const temEmBreve = TRIMESTRES.some(t => t.status === 'em-breve');
+if(temEmBreve) document.getElementById('bibVazio').style.display = 'block';
+</script>
+
+</body>
+</html>
